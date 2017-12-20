@@ -14,9 +14,9 @@
 			<xsd:attribute name="e-mail" type="xsd:string"/>
 			<!--Ajout des attrinbut externe -->
 
-			<xsd:attribute name="titre_these" type="xsd:string"/>
-			<xsd:attribute name="acronyme_equipe" type="xsd:string"/>
-			<xsd:attribute name="id_production" type="xsd:int"/>
+            <xsd:element name="titre_these" type="xsd:string" maxOccurs="unbounded" minOccurs="0"/>
+            <xsd:attribute name="acronyme_equipe" type="xsd:token"/>
+            <xsd:element name="id_production_scientifique" type="xsd:token" maxOccurs="unbounded" minOccurs="0"/>
 
 
 		</xsd:sequence>
@@ -40,7 +40,7 @@
 
 	<xsd:keyref name="prod_ref" refer="cle_membre">
     	<xsd:selector xpath="Production_Scientifique"/>
-    	<xsd:field xpath="@id_production"/>
+    	<xsd:field xpath="@id_production_scientifique"/>
 	</xsd:keyref>
 
 </xsd:element>
@@ -53,23 +53,22 @@
 	</xsd:complexType>
 </xsd:element>
 
-<xsd:element name = "These">
-	<xsd:complexType>            
+<xsd:ComplexType name = "These">
+
 
 		<xsd:sequence>
 			<xsd:attribute name="titre_these" type="xsd:string"/>
 			<xsd:attribute name="domaine"  type="xsd:string"/>
-			<xsd:element name="id_production_scientifique" type="xsd:token" maxOccurs="unbounded"/>
+			<xsd:element name="id_production_scientifique" type="xsd:token" maxOccurs="unbounded" minOccurs="0"/>
 
 			<!-- Ajout des attributs externes -->
 			<xsd:attribute name="acronyme_equipe"  type="xsd:string"/>	
-			<xsd:attribute name="id_membre"  type="xsd:token"/>	
+			<xsd:element name="id_membre"  type="xsd:token" maxOccurs="3" minOccurs="0"/>
 
 		</xsd:sequence>
-	
-	</xsd:complexType>    
 
-	<xsd:key name= "cle_these ">
+
+	<xsd:key name= "cle_these">
 		<xsd:selector xpath = "These"/>
 		<xsd:field xpath = "@titre_these"/>
     </xsd:key>
@@ -89,7 +88,7 @@
 		<xsd:filed xpath="@id_membre"/>
 	</xsd:keyref>
 
-</xsd:element>
+</xsd:ComplexType>
 
 <xsd:element name="En_Cours">
 	<xsd:complexType>
@@ -116,7 +115,7 @@
 <xsd:element name="Production_Scientifique">
 	<xsd:complexType>
 		<xsd:sequence>
-		    <xsd:attribute name="id_production_scientifique" type="xsd:int"/>
+		    <xsd:attribute name="id_production_scientifique" type="xsd:token"/>
 			<xsd:attribute name="titre" type="xsd:string"/>
 			<xsd:attribute name="nom_auteur" type="xsd:string"/>
 			<xsd:attribute name="affiliation" type="xsd:string"/>
@@ -210,7 +209,7 @@
 
     <xsd:complexType>
         <xsd:attribute name="nom_equipe" type="xsd:string"/>
-        <xsd:attribute name="acronyme_equipe" type="xsd:string"/>
+        <xsd:attribute name="acronyme_equipe" type="xsd:token"/>
 		<!-- ajout des attributs externes-->
 		<xsd:attribute name="acronyme_theme" type="xsd:string"/>
 		<xsd:element name="id_membre" type="xsd:token" maxOccurs="unbounded"/>
@@ -242,7 +241,7 @@
             <xsd:element name="date_debut" type="xsd:string"/>
             <xsd:element name="date_fin" type="xsd:string"/>
 			<!-- ajout des attributs externes-->
-			 <xsd:element name="acronyme_equipe" type="xsd:string"/>
+			 <xsd:element name="acronyme_equipe" type="xsd:token"/>
 			 <xsd:element name="acronyme_theme" type="xsd:string" />
 		</xsd:sequence>    
 	</xsd:complexType>
