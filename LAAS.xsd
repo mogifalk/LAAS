@@ -17,7 +17,7 @@
             <xsd:element name="titre_these" type="xsd:string" maxOccurs="unbounded" minOccurs="0"/>
             <xsd:element name="acronyme_equipe" type="xsd:token"/>
             <xsd:element name="id_production_scientifique" type="xsd:token" maxOccurs="unbounded" minOccurs="0"/>
-            
+
 		</xsd:sequence>
 
 	</xsd:complexType>
