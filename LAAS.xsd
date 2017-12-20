@@ -325,8 +325,38 @@
         <xsd:selector xpath="Membre"/>
         <xsd:field xpath="@id_membre"/>
     </xsd:keyref>
-
 </xsd:element>
+
+    <xsd:element name="Projet_de_Recherche">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="titre_projet" type="xsd:string"/>
+                <xsd:element name="acronyme_projet" type="xsd:token"/>
+                <xsd:element name="date_debut" type="xsd:string"/>
+                <xsd:element name="durée" type="xsd:string"/>
+                <xsd:element name="cout" type="xsd:int"/>
+                <xsd:element name="budget" type="xsd:int"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="Partenaire">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="nom" type="xsd:string"/>
+                <xsd:element name="pays" type="xsd:string"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="Auteur">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="id_auteur" type="xsd:int"/>
+                <xsd:element name="nom" type="xsd:string"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
 
 </xsd:schema>
 

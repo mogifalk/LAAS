@@ -3,7 +3,6 @@
 <Laas>
 	<Membres>
 		<Membre>
-
 			<id_membre>badufour</id_membre>
 			<nom_membre>Dufour</nom_membre>
 			<prenom_membre>Bastien</prenom_membre>
@@ -13,11 +12,9 @@
 			<titre_these>Reseaux transverse</titre_these>
 			<acronyme_equipe>E1</acronyme_equipe>
 			<id_production_scientifique>article_gravitation</id_production_scientifique>
-
 		</Membre>
 
 		<Membre>
-
 			<id_membre>adgonzalez</id_membre>
 			<nom_membre>Gonzalez</nom_membre>
 			<prenom_membre>Adrien</prenom_membre>
@@ -27,11 +24,9 @@
 			<titre_these>Reseaux transverse</titre_these>
 			<acronyme_equipe>E1</acronyme_equipe>
 			<id_production_scientifique>article_danger_wifi</id_production_scientifique>
-
 		</Membre>
 
 		<Membre>
-
 			<id_membre>aldlm</id_membre>
 			<nom_membre>Dlm</nom_membre>
 			<prenom_membre>Alban</prenom_membre>
@@ -39,11 +34,9 @@
 			<email>aldlm@laas.fr</email>
 			<titre_these>Reseaux</titre_these>
 			<acronyme_equipe>E2</acronyme_equipe>
-
 		</Membre>
 
 		<Membre>
-
 			<id_membre>jutena</id_membre>
 			<nom_membre>Tena</nom_membre>
 			<prenom_membre>Julien</prenom_membre>
@@ -53,11 +46,9 @@
 			<titre_these>Reseaux transverse</titre_these>
 			<acronyme_equipe>E1</acronyme_equipe>
 			<id_production_scientifique>article_danger_wifi</id_production_scientifique>
-
 		</Membre>
 
 		<Membre>
-
 			<id_membre>josmith</id_membre>
 			<nom_membre>Smith</nom_membre>
 			<prenom_membre>John</prenom_membre>
@@ -65,14 +56,13 @@
 			<email>josmith@laas.fr</email>
 			<titre_these>Reseaux</titre_these>
 			<acronyme_equipe>E2</acronyme_equipe>
-			<id_production_scientifique>article_wanacry</id_production_scientifique>
-
+			<id_production_scientifique>article wanacry</id_production_scientifique>
 		</Membre>
 
 	</Membres>
 
 	<Production_Scientifique>
-		<id_production_scientifique>remise_en_perspective_reseaux</id_production_scientifique>
+		<id_production_scientifique>Remise en perspective reseaux</id_production_scientifique>
 		<titre>Remise en perspectives des réseaux</titre>
 		<nom_auteur>Dlm</nom_auteur>
 		<nom_auteur>Smith</nom_auteur>
@@ -83,7 +73,7 @@
 	</Production_Scientifique>
 
 	<Production_Scientifique>
-		<id_production_scientifique>etude_transversale_reseaux</id_production_scientifique>
+		<id_production_scientifique>Etude transversale reseaux</id_production_scientifique>
 		<titre>Etude transversale réseaux</titre>
 		<nom_auteur>Dufour</nom_auteur>
 		<affiliation>Enseignant chercheur Laas</affiliation>
@@ -92,7 +82,7 @@
 	</Production_Scientifique>
 
 	<Production_Scientifique>
-		<id_production_scientifique>article_multiplicite_reseaux</id_production_scientifique>
+		<id_production_scientifique>Article multiplicite Réseaux</id_production_scientifique>
 		<titre>La multiplicité des réseaux</titre>
 		<nom_auteur>Gonzalez</nom_auteur>
 		<nom_auteur>Tena</nom_auteur>
@@ -127,7 +117,6 @@
 	</Reunion_groupe>
 
 	<En_Cours>
-
 		<titre_these>Reseaux multiples</titre_these>
 		<domaine>Reseau</domaine>
 		<id_production_scientifique>article_multiplicite_reseau</id_production_scientifique>
@@ -136,11 +125,9 @@
 		<id_membre>adgonzalez</id_membre>
 		<id_membre>jutena</id_membre>
         <date_debut>27/03/2016</date_debut>
-
 	</En_Cours>
 
 	<Soutenue>
-
 		<titre_these>Reseaux transverse</titre_these>
 		<domaine>Reseaux</domaine>
 		<id_production_scientifique>etude_transversale_reseaux</id_production_scientifique>
@@ -149,11 +136,9 @@
 		<id_membre>adgonzalez</id_membre>
         <date_debut>18/03/2014</date_debut>
         <date_fin>19/04/2015</date_fin>
-
 	</Soutenue>
 
 	<Soutenue>
-
 		<titre_these>Reseaux</titre_these>
 		<domaine>Reseaux</domaine>
 		<id_production_scientifique>remise_en_perspective_reseaux</id_production_scientifique>
@@ -162,7 +147,6 @@
 		<id_membre>josmith</id_membre>
         <date_debut>18/03/2010</date_debut>
         <date_fin>19/04/2011</date_fin>
-
 	</Soutenue>
 
 
