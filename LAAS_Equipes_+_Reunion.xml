@@ -61,8 +61,43 @@
 
 	</Membres>
 
+
+	<En_Cours>
+		<titre_these>Reseaux multiples</titre_these>
+		<domaine>Reseau</domaine>
+		<id_production_scientifique>article_multiplicite_reseau</id_production_scientifique>
+		<acronyme_equipe>E1</acronyme_equipe>
+		<id_membre>badufour</id_membre>
+		<id_membre>adgonzalez</id_membre>
+		<id_membre>jutena</id_membre>
+		<date_debut>27/03/2016</date_debut>
+	</En_Cours>
+
+	<Soutenue>
+		<titre_these>Reseaux transverse</titre_these>
+		<domaine>Reseaux</domaine>
+		<id_production_scientifique>etude_transversale_reseaux</id_production_scientifique>
+		<acronyme_equipe>E1</acronyme_equipe>
+		<id_membre>badufour</id_membre>
+		<id_membre>adgonzalez</id_membre>
+		<date_debut>18/03/2014</date_debut>
+		<date_fin>19/04/2015</date_fin>
+	</Soutenue>
+
+	<Soutenue>
+		<titre_these>Reseaux</titre_these>
+		<domaine>Reseaux</domaine>
+		<id_production_scientifique>remise_en_perspective_reseaux</id_production_scientifique>
+		<acronyme_equipe>E2</acronyme_equipe>
+		<id_membre>aldlm</id_membre>
+		<id_membre>josmith</id_membre>
+		<date_debut>18/03/2010</date_debut>
+		<date_fin>19/04/2011</date_fin>
+	</Soutenue>
+
+
 	<Production_Scientifique>
-		<id_production_scientifique>Remise en perspective reseaux</id_production_scientifique>
+		<id_production_scientifique>1</id_production_scientifique>
 		<titre>Remise en perspectives des réseaux</titre>
 		<nom_auteur>Dlm</nom_auteur>
 		<nom_auteur>Smith</nom_auteur>
@@ -73,7 +108,7 @@
 	</Production_Scientifique>
 
 	<Production_Scientifique>
-		<id_production_scientifique>Etude transversale reseaux</id_production_scientifique>
+		<id_production_scientifique>2</id_production_scientifique>
 		<titre>Etude transversale réseaux</titre>
 		<nom_auteur>Dufour</nom_auteur>
 		<affiliation>Enseignant chercheur Laas</affiliation>
@@ -82,20 +117,66 @@
 	</Production_Scientifique>
 
 	<Production_Scientifique>
-		<id_production_scientifique>Article multiplicite Réseaux</id_production_scientifique>
+		<id_production_scientifique>3</id_production_scientifique>
 		<titre>La multiplicité des réseaux</titre>
 		<nom_auteur>Gonzalez</nom_auteur>
-		<nom_auteur>Tena</nom_auteur>
 		<affiliation>Directeur Recherche Laas</affiliation>
+		<nom_auteur>Tena</nom_auteur>
 		<affiliation>Enseignant Chercheur</affiliation>
 		<annee_publication>2017</annee_publication>
 		<nombre_pages>350</nombre_pages>
 	</Production_Scientifique>
 
+	<Rapport_Recherche>
+		<id_production_scientifique>4</id_production_scientifique>
+		<titre>Les bénéfices d'un bon canapé</titre>
+		<nom_auteur>Dufour</nom_auteur>
+		<affiliation>Expert en sofa</affiliation>
+		<nom_auteur>Dlm</nom_auteur>
+		<affiliation>Consultant santé</affiliation>
+		<annee_publication>2016</annee_publication>
+		<nombre_pages>420</nombre_pages>
+		<projet_recherche>Le bien par le repos</projet_recherche>
+	</Rapport_Recherche>
+
+	<Article_Conference>
+		<id_production_scientifique>5</id_production_scientifique>
+		<titre>Les trous de vers à la maison</titre>
+		<nom_auteur>Ethan Sarwell</nom_auteur>
+		<affiliation>Conférencier freelance</affiliation>
+		<annee_publication>2017</annee_publication>
+		<nombre_pages>11</nombre_pages>
+		<nom_conf>Des trous, des verts, des trous de vers</nom_conf>
+		<classe>B</classe>
+	</Article_Conference>
+
+	<Revue>
+		<id_production_scientifique>6</id_production_scientifique>
+		<titre>La brouette quantique</titre>
+		<nom_auteur>Gaston Verteille</nom_auteur>
+		<affiliation>Jardinier nano_physicien</affiliation>
+		<annee_publication>1996</annee_publication>
+		<nombre_pages>321</nombre_pages>
+		<nom_journal>Jardin et nucléarité</nom_journal>
+		<classe>A</classe>
+	</Revue>
+
+	<Theme>
+		<description>Robots et IA</description>
+		<acronyme_theme>RIA</acronyme_theme>
+		<id_membre>adgonzal</id_membre>
+	</Theme>
+
+	<Theme>
+		<description>Téléportation</description>
+		<acronyme_theme>TEL</acronyme_theme>
+		<id_membre>adgonzal</id_membre>
+	</Theme>
+
 	<Equipe>
 		<nom_equipe>Equipe 1</nom_equipe>
 		<acronyme_equipe>E1</acronyme_equipe>
-		<acronyme_theme>DL</acronyme_theme> <!-- DL = Drones Livreurs-->
+		<acronyme_theme>RIA</acronyme_theme> <!-- DL = Drones Livreurs-->
 		<id_membre>badufour</id_membre>
 		<id_membre>aldlm</id_membre>
 	</Equipe>
@@ -103,7 +184,7 @@
 	<Equipe>
 		<nom_equipe>Equipe 2</nom_equipe>
 		<acronyme_equipe>E2</acronyme_equipe>
-		<acronyme_theme>AA</acronyme_theme> <!-- AA = Arrosage Automatique-->
+		<acronyme_theme>TEL</acronyme_theme> <!-- AA = Arrosage Automatique-->
 		<id_membre>adgonzal</id_membre>
 		<id_membre>jutena</id_membre>
 		<id_membre>josmith</id_membre>
@@ -116,38 +197,16 @@
 		<acronyme_equipe>E1</acronyme_equipe>
 	</Reunion_groupe>
 
-	<En_Cours>
-		<titre_these>Reseaux multiples</titre_these>
-		<domaine>Reseau</domaine>
-		<id_production_scientifique>article_multiplicite_reseau</id_production_scientifique>
-		<acronyme_equipe>E1</acronyme_equipe>
-		<id_membre>badufour</id_membre>
-		<id_membre>adgonzalez</id_membre>
-		<id_membre>jutena</id_membre>
-        <date_debut>27/03/2016</date_debut>
-	</En_Cours>
-
-	<Soutenue>
-		<titre_these>Reseaux transverse</titre_these>
-		<domaine>Reseaux</domaine>
-		<id_production_scientifique>etude_transversale_reseaux</id_production_scientifique>
-		<acronyme_equipe>E1</acronyme_equipe>
-		<id_membre>badufour</id_membre>
-		<id_membre>adgonzalez</id_membre>
-        <date_debut>18/03/2014</date_debut>
-        <date_fin>19/04/2015</date_fin>
-	</Soutenue>
-
-	<Soutenue>
-		<titre_these>Reseaux</titre_these>
-		<domaine>Reseaux</domaine>
-		<id_production_scientifique>remise_en_perspective_reseaux</id_production_scientifique>
+	<Conference>
+		<nom_evenement>Intelligence artificielle et alcool : un mélange judicieux ?</nom_evenement>
+		<date_debut>31/12/17</date_debut>
+		<date_fin>02/01/18</date_fin>
 		<acronyme_equipe>E2</acronyme_equipe>
 		<id_membre>aldlm</id_membre>
 		<id_membre>josmith</id_membre>
         <date_debut>18/03/2010</date_debut>
         <date_fin>19/04/2011</date_fin>
-	</Soutenue>
+	</Conference>
 
 
 </Laas>

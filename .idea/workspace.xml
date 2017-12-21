@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="239448b5-812d-4aba-99a7-96faf4187580" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/LAAS.xsd" afterPath="$PROJECT_DIR$/LAAS.xsd" />
       <change beforePath="$PROJECT_DIR$/LAAS_Equipes_+_Reunion.xml" afterPath="$PROJECT_DIR$/LAAS_Equipes_+_Reunion.xml" />
+=======
+    <list default="true" id="e7b141e5-63a1-44c9-9854-198005f14b59" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/LAAS.xsd" afterPath="$PROJECT_DIR$/LAAS.xsd" />
+>>>>>>> a4099f8d2c0a4901911e077b8f6e85357fb519a3
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,13 +18,41 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
+=======
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="LAAS_Equipes_+_Reunion.xml" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/LAAS_Equipes_+_Reunion.xml">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="721">
+                    <caret line="200" column="23" lean-forward="false" selection-start-line="200" selection-start-column="23" selection-end-line="200" selection-end-column="23" />
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
+>>>>>>> a4099f8d2c0a4901911e077b8f6e85357fb519a3
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="LAAS.xsd" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/LAAS.xsd">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="144">
               <caret line="8" column="44" lean-forward="true" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+=======
+            <state relative-caret-position="342">
+              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+>>>>>>> a4099f8d2c0a4901911e077b8f6e85357fb519a3
               <folding />
             </state>
           </provider>
@@ -228,8 +261,13 @@
       <created>1513784845084</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+<<<<<<< HEAD
       <updated>1513784845084</updated>
       <workItem from="1513784846266" duration="412000" />
+=======
+      <updated>1513785352381</updated>
+      <workItem from="1513785353551" duration="7781000" />
+>>>>>>> a4099f8d2c0a4901911e077b8f6e85357fb519a3
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1513784889217</created>
@@ -238,11 +276,33 @@
       <option name="project" value="LOCAL" />
       <updated>1513784889217</updated>
     </task>
+<<<<<<< HEAD
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="412000" />
+=======
+    <task id="LOCAL-00002" summary="Third commit">
+      <created>1513790013034</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1513790013034</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Fourth commit">
+      <created>1513793125686</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1513793125686</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="7781000" />
+>>>>>>> a4099f8d2c0a4901911e077b8f6e85357fb519a3
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="24" width="864" height="744" extended-state="4" />
@@ -313,8 +373,15 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+<<<<<<< HEAD
     <MESSAGE value="First commit" />
     <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+=======
+    <MESSAGE value="Second commit" />
+    <MESSAGE value="Third commit" />
+    <MESSAGE value="Fourth commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fourth commit" />
+>>>>>>> a4099f8d2c0a4901911e077b8f6e85357fb519a3
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -384,16 +451,26 @@
     <entry file="file://$PROJECT_DIR$/.idea/LAAS.iml" />
     <entry file="file://$PROJECT_DIR$/LAAS_Equipes_+_Reunion.xml">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="254">
           <caret line="63" column="20" lean-forward="true" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
+=======
+        <state relative-caret-position="721">
+          <caret line="200" column="23" lean-forward="false" selection-start-line="200" selection-start-column="23" selection-end-line="200" selection-end-column="23" />
+>>>>>>> a4099f8d2c0a4901911e077b8f6e85357fb519a3
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LAAS.xsd">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="144">
           <caret line="8" column="44" lean-forward="true" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+=======
+        <state relative-caret-position="342">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+>>>>>>> a4099f8d2c0a4901911e077b8f6e85357fb519a3
           <folding />
         </state>
       </provider>
