@@ -20,27 +20,29 @@
                 <xsd:element ref="Reunion_groupe" maxOccurs="unbounded" minOccurs="0"/>
             </xsd:sequence>
         </xsd:complexType>
-
-
     </xsd:element>
+
+<xsd:element name="Membres">
+    <xsd:complexType>
+        <xsd:sequence>
+            <xsd:element ref="Membre" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:element>
+
 <xsd:element name="Membre">
     <xsd:complexType>
-    
         <xsd:sequence>
-
             <xsd:element name="id_membre" type="xsd:token"/>
             <xsd:element name="nom_membre" type="xsd:string"/>
             <xsd:element name="prenom_membre" type="xsd:string"/>
             <xsd:element name="grade" type="xsd:string"/>
 			<xsd:element name="e-mail" type="xsd:string"/>
 			<!--Ajout des attrinbut externe -->
-
             <xsd:element name="titre_these" type="xsd:string" maxOccurs="unbounded" minOccurs="0"/>
             <xsd:element name="acronyme_equipe" type="xsd:token"/>
             <xsd:element name="id_production_scientifique" type="xsd:token" maxOccurs="unbounded" minOccurs="0"/>
-
 		</xsd:sequence>
-
 	</xsd:complexType>
 
 	<xsd:key name="cle_membre">
@@ -62,15 +64,35 @@
     	<xsd:selector xpath="Production_Scientifique"/>
     	<xsd:field xpath="@id_production_scientifique"/>
 	</xsd:keyref>
-
 </xsd:element>
 
-<xsd:element name="Membres">
+<xsd:element name="Equipe">
+
     <xsd:complexType>
         <xsd:sequence>
-            <xsd:element ref="Membre" maxOccurs="unbounded"/>
+            <xsd:element name="nom_equipe" type="xsd:string"/>
+            <xsd:element name="acronyme_equipe" type="xsd:string"/>
+            <!-- ajout des attributs externes-->
+            <xsd:element name="acronyme_theme" type="xsd:string"/>
+            <xsd:element name="id_membre" type="xsd:token" maxOccurs="unbounded"/>
         </xsd:sequence>
-	</xsd:complexType>
+    </xsd:complexType>
+
+    <xsd:key name="cle_equipe">
+        <xsd:selector xpath = "Equipe"/>
+        <xsd:field xpath = "@acronyme_equipe"/>
+    </xsd:key>
+
+    <xsd:keyref name="theme_ref" refer="cle_equipe">
+        <xsd:selector xpath = "Theme"/>
+        <xsd:field xpath="@acronyme_theme"/>
+    </xsd:keyref>
+
+    <xsd:keyref name="respo_equipe" refer="cle_equipe">
+        <xsd:selector xpath = "Membre"/>
+        <xsd:field xpath="@id_membre"/>
+    </xsd:keyref>
+
 </xsd:element>
 
 <xsd:complexType name = "These">
@@ -187,9 +209,7 @@
         <xsd:selector xpath = "Auteur"/>
         <xsd:field xpath = "@id_auteur"/>
     </xsd:keyref>
-
-
-    </xsd:element>
+</xsd:element>
 
 
 
@@ -275,38 +295,6 @@
         <xsd:field xpath="@acronyme_projet"/>
     </xsd:keyref>
 
-
-</xsd:element>
-
-
-
-<xsd:element name="Equipe">
-
-    <xsd:complexType>
-        <xsd:sequence>
-            <xsd:element name="nom_equipe" type="xsd:string"/>
-            <xsd:element name="acronyme_equipe" type="xsd:token"/>
-            <!-- ajout des attributs externes-->
-            <xsd:element name="acronyme_theme" type="xsd:token"/>
-            <xsd:element name="id_membre" type="xsd:token" maxOccurs="unbounded"/>
-        </xsd:sequence>
-    </xsd:complexType>
-
-    <xsd:key name="cle_equipe">
-        <xsd:selector xpath = "Equipe"/>
-        <xsd:field xpath = "@acronyme_equipe"/>
-    </xsd:key>
-
-    <xsd:keyref name="theme_ref" refer="cle_equipe">
-        <xsd:selector xpath = "Theme"/>
-        <xsd:field xpath="@acronyme_theme"/>
-    </xsd:keyref>
-
-    <xsd:keyref name="respo_equipe" refer="cle_equipe">
-        <xsd:selector xpath = "Membre"/>
-        <xsd:field xpath="@id_membre"/>
-    </xsd:keyref>
-
 </xsd:element>
 
 
@@ -350,15 +338,15 @@
 
 
 <xsd:element name="Conference">
-<xsd:complexType>
-    <xsd:complexContent>
-        <xsd:extension base="Evenement">
-            <xsd:sequence>
-                <xsd:element name="classe" type="xsd:string"/>
-            </xsd:sequence>
-        </xsd:extension>
-    </xsd:complexContent>
-</xsd:complexType>
+    <xsd:complexType>
+        <xsd:complexContent>
+            <xsd:extension base="Evenement">
+                <xsd:sequence>
+                    <xsd:element name="classe" type="xsd:string"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
 
     <xsd:key name="cle_evenement">
         <xsd:selector xpath = "Evenement"/>
@@ -390,6 +378,7 @@
             <xsd:element name="durée" type="xsd:string"/>
             <xsd:element name="cout" type="xsd:int"/>
             <xsd:element name="budget" type="xsd:int"/>
+            <xsd:element ref="Rapport_Recherche" maxOccurs="unbounded" minOccurs="0"/>
             <!-- attributs externes -->
             <xsd:element name="acronyme_equipe" type="xsd:token"/>
             <xsd:element name="id_membre" type="xsd:token"/>

@@ -10,7 +10,6 @@
 			<email>badufour@laas.fr</email>
 			<titre_these>Reseaux multiples</titre_these>
 			<titre_these>Reseaux transverse</titre_these>
-			<acronyme_equipe>E1</acronyme_equipe>
 			<id_production_scientifique>article_gravitation</id_production_scientifique>
 		</Membre>
 
@@ -22,7 +21,6 @@
 			<email>adgonzalez@laas.fr</email>
 			<titre_these>Reseaux multiples</titre_these>
 			<titre_these>Reseaux transverse</titre_these>
-			<acronyme_equipe>E1</acronyme_equipe>
 			<id_production_scientifique>article_danger_wifi</id_production_scientifique>
 		</Membre>
 
@@ -33,7 +31,6 @@
 			<grade>CR2</grade>
 			<email>aldlm@laas.fr</email>
 			<titre_these>Reseaux</titre_these>
-			<acronyme_equipe>E2</acronyme_equipe>
 		</Membre>
 
 		<Membre>
@@ -44,7 +41,6 @@
 			<email>jutena@laas.fr</email>
 			<titre_these>Reseaux</titre_these>
 			<titre_these>Reseaux transverse</titre_these>
-			<acronyme_equipe>E1</acronyme_equipe>
 			<id_production_scientifique>article_danger_wifi</id_production_scientifique>
 		</Membre>
 
@@ -55,12 +51,26 @@
 			<grade>DR1</grade>
 			<email>josmith@laas.fr</email>
 			<titre_these>Reseaux</titre_these>
-			<acronyme_equipe>E2</acronyme_equipe>
 			<id_production_scientifique>article wanacry</id_production_scientifique>
 		</Membre>
-
 	</Membres>
 
+    <Equipe>
+        <nom_equipe>Equipe 1</nom_equipe>
+        <acronyme_equipe>E1</acronyme_equipe>
+        <acronyme_theme>RIA</acronyme_theme>
+        <id_membre>badufour</id_membre>
+        <id_membre>aldlm</id_membre>
+    </Equipe>
+
+    <Equipe>
+        <nom_equipe>Equipe 2</nom_equipe>
+        <acronyme_equipe>E2</acronyme_equipe>
+        <acronyme_theme>TEL</acronyme_theme>
+        <id_membre>adgonzalez</id_membre>
+        <id_membre>jutena</id_membre>
+        <id_membre>josmith</id_membre>
+    </Equipe>
 
 	<En_Cours>
 		<titre_these>Reseaux multiples</titre_these>
@@ -95,8 +105,31 @@
 		<date_fin>19/04/2011</date_fin>
 	</Soutenue>
 
+	<!-- AUTEUR HERE-->
 
-	<Production_Scientifique>
+	<Revue>
+		<id_production_scientifique>6</id_production_scientifique>
+		<titre>La brouette quantique</titre>
+		<nom_auteur>Gaston Verteille</nom_auteur>
+		<affiliation>Jardinier nano_physicien</affiliation>
+		<annee_publication>1996</annee_publication>
+		<nombre_pages>321</nombre_pages>
+		<nom_journal>Jardin et nucléarité</nom_journal>
+		<classe>A</classe>
+	</Revue>
+
+	<Revue>
+		<id_production_scientifique>2</id_production_scientifique>
+		<titre>Etude transversale des cages de Faraday</titre>
+		<nom_auteur>Dufour</nom_auteur>
+		<affiliation>Enseignant chercheur Laas</affiliation>
+		<annee_publication>2007</annee_publication>
+		<nombre_pages>400</nombre_pages>
+		<nom_journal>Coup de foudre</nom_journal>
+		<classe>AA</classe>
+	</Revue>
+
+	<Article_Conference>
 		<id_production_scientifique>1</id_production_scientifique>
 		<titre>Remise en perspectives des réseaux</titre>
 		<nom_auteur>Dlm</nom_auteur>
@@ -105,39 +138,22 @@
 		<affiliation>Directeur de Recherche</affiliation>
 		<annee_publication>2005</annee_publication>
 		<nombre_pages>200</nombre_pages>
-	</Production_Scientifique>
+		<nom_conf>Les réseaux c'est pas le zoo</nom_conf>
+		<classe>A</classe>
+	</Article_Conference>
 
-	<Production_Scientifique>
-		<id_production_scientifique>2</id_production_scientifique>
-		<titre>Etude transversale réseaux</titre>
-		<nom_auteur>Dufour</nom_auteur>
-		<affiliation>Enseignant chercheur Laas</affiliation>
-		<annee_publication>2007</annee_publication>
-		<nombre_pages>400</nombre_pages>
-	</Production_Scientifique>
-
-	<Production_Scientifique>
+	<Article_Conference>
 		<id_production_scientifique>3</id_production_scientifique>
-		<titre>La multiplicité des réseaux</titre>
+		<titre>La multiplicité des atomes</titre>
 		<nom_auteur>Gonzalez</nom_auteur>
 		<affiliation>Directeur Recherche Laas</affiliation>
 		<nom_auteur>Tena</nom_auteur>
 		<affiliation>Enseignant Chercheur</affiliation>
 		<annee_publication>2017</annee_publication>
 		<nombre_pages>350</nombre_pages>
-	</Production_Scientifique>
-
-	<Rapport_Recherche>
-		<id_production_scientifique>4</id_production_scientifique>
-		<titre>Les bénéfices d'un bon canapé</titre>
-		<nom_auteur>Dufour</nom_auteur>
-		<affiliation>Expert en sofa</affiliation>
-		<nom_auteur>Dlm</nom_auteur>
-		<affiliation>Consultant santé</affiliation>
-		<annee_publication>2016</annee_publication>
-		<nombre_pages>420</nombre_pages>
-		<projet_recherche>Le bien par le repos</projet_recherche>
-	</Rapport_Recherche>
+		<nom_conf>1,2... beaucoup</nom_conf>
+		<classe>C</classe>
+	</Article_Conference>
 
 	<Article_Conference>
 		<id_production_scientifique>5</id_production_scientifique>
@@ -150,16 +166,36 @@
 		<classe>B</classe>
 	</Article_Conference>
 
-	<Revue>
-		<id_production_scientifique>6</id_production_scientifique>
-		<titre>La brouette quantique</titre>
-		<nom_auteur>Gaston Verteille</nom_auteur>
-		<affiliation>Jardinier nano_physicien</affiliation>
-		<annee_publication>1996</annee_publication>
-		<nombre_pages>321</nombre_pages>
-		<nom_journal>Jardin et nucléarité</nom_journal>
-		<classe>A</classe>
-	</Revue>
+
+    <Partenaire>
+        <nom>Drozophou</nom>
+        <pays>Guatemala</pays>
+    </Partenaire>
+
+    <Projet_de_Recherche>
+        <titre_projet>Reproduction des mouches unijambistes en milieu humide</titre_projet>
+        <acronyme_projet>RDMUMH</acronyme_projet>
+        <date_debut>12/12/12</date_debut>
+        <duree>12 ans</duree>
+        <cout> 12€</cout>
+        <budget>12,12€</budget>
+
+        <Rapport_Recherche>
+            <id_production_scientifique>4</id_production_scientifique>
+            <titre>Les bénéfices d'un bon canapé</titre>
+            <nom_auteur>Dufour</nom_auteur>
+            <affiliation>Expert en sofa</affiliation>
+            <nom_auteur>Dlm</nom_auteur>
+            <affiliation>Consultant santé</affiliation>
+            <annee_publication>2016</annee_publication>
+            <nombre_pages>420</nombre_pages>
+            <projet_recherche>Le bien par le repos</projet_recherche>
+        </Rapport_Recherche>
+
+        <acronyme_projet>E1</acronyme_projet>
+        <id_membre>aldlm</id_membre>
+        <nom_partenaire>Drozophou</nom_partenaire>
+    </Projet_de_Recherche>
 
 	<Theme>
 		<description>Robots et IA</description>
@@ -173,22 +209,16 @@
 		<id_membre>adgonzal</id_membre>
 	</Theme>
 
-	<Equipe>
-		<nom_equipe>Equipe 1</nom_equipe>
-		<acronyme_equipe>E1</acronyme_equipe>
-		<acronyme_theme>RIA</acronyme_theme> <!-- DL = Drones Livreurs-->
-		<id_membre>badufour</id_membre>
-		<id_membre>aldlm</id_membre>
-	</Equipe>
-
-	<Equipe>
-		<nom_equipe>Equipe 2</nom_equipe>
-		<acronyme_equipe>E2</acronyme_equipe>
-		<acronyme_theme>TEL</acronyme_theme> <!-- AA = Arrosage Automatique-->
-		<id_membre>adgonzal</id_membre>
-		<id_membre>jutena</id_membre>
-		<id_membre>josmith</id_membre>
-	</Equipe>
+    <Conference>
+        <nom_evenement>Intelligence artificielle et alcool : un mélange judicieux ?</nom_evenement>
+        <date_debut>31/12/17</date_debut>
+        <date_fin>02/01/18</date_fin>
+        <acronyme_equipe>E2</acronyme_equipe>
+        <id_membre>aldlm</id_membre>
+        <id_membre>josmith</id_membre>
+        <date_debut>18/03/2010</date_debut>
+        <date_fin>19/04/2011</date_fin>
+    </Conference>
 
 	<Reunion_groupe>
 		<nom_evenement>Mise en commun des recherches</nom_evenement>
@@ -196,40 +226,5 @@
 		<date_fin>24/12/17</date_fin>
 		<acronyme_equipe>E1</acronyme_equipe>
 	</Reunion_groupe>
-
-	<Conference>
-		<nom_evenement>Intelligence artificielle et alcool : un mélange judicieux ?</nom_evenement>
-		<date_debut>31/12/17</date_debut>
-		<date_fin>02/01/18</date_fin>
-		<acronyme_equipe>E2</acronyme_equipe>
-		<id_membre>aldlm</id_membre>
-		<id_membre>josmith</id_membre>
-        <date_debut>18/03/2010</date_debut>
-        <date_fin>19/04/2011</date_fin>
-	</Conference>
-
-	<Projet_de_Recherche>
-		<titre_projet>Reproduction des mouches unijambistes en milieu humide</titre_projet>
-		<acronyme_projet>RDMUMH</acronyme_projet>
-		<date_debut>12/12/12</date_debut>
-		<duree>12 ans</duree>
-		<cout> 12€</cout>
-		<budget>12,12€</budget>
-		<acronyme_projet>E1</acronyme_projet>
-		<id_membre>aldlm</id_membre>
-		<nom_partenaire>Drozophou</nom_partenaire>
-	</Projet_de_Recherche>
-
-
-
-	<Partenaire>
-		<nom>Drozophou</nom>
-		<pays>Guatemala</pays>
-	</Partenaire>
-
-
-
-
-
 
 </Laas>
