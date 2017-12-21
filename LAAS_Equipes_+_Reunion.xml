@@ -3,7 +3,7 @@
 <Laas>
 	<Membres>
 		<Membre>
-			<id_membre>badufour</id_membre>
+			<id_membe>badufour</id_membe>
 			<nom_membre>Dufour</nom_membre>
 			<prenom_membre>Bastien</prenom_membre>
 			<grade>CR1</grade>
@@ -202,7 +202,10 @@
 		<date_debut>31/12/17</date_debut>
 		<date_fin>02/01/18</date_fin>
 		<acronyme_equipe>E2</acronyme_equipe>
-		<classe>Z</classe>
+		<id_membre>aldlm</id_membre>
+		<id_membre>josmith</id_membre>
+        <date_debut>18/03/2010</date_debut>
+        <date_fin>19/04/2011</date_fin>
 	</Conference>
 
 	<Projet_de_Recherche>
