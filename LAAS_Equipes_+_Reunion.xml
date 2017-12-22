@@ -26,7 +26,7 @@
 
 		<Membre>
 			<id_membre>aldlm</id_membre>
-			<nom_membre>Dlm</nom_membre>
+			<nom_membre>LE_CARBONNIER_DE_LA_MORSANGLIERE</nom_membre>
 			<prenom_membre>Alban</prenom_membre>
 			<grade>CR2</grade>
 			<email>aldlm@laas.fr</email>
@@ -110,7 +110,7 @@
 	<Revue>
 		<id_production_scientifique>6</id_production_scientifique>
 		<titre>La brouette quantique</titre>
-		<nom_auteur>Gaston Verteille</nom_auteur>
+		<id_auteur>DLM</id_auteur>
 		<affiliation>Jardinier nano_physicien</affiliation>
 		<annee_publication>1996</annee_publication>
 		<nombre_pages>321</nombre_pages>
@@ -121,7 +121,7 @@
 	<Revue>
 		<id_production_scientifique>2</id_production_scientifique>
 		<titre>Etude transversale des cages de Faraday</titre>
-		<nom_auteur>Dufour</nom_auteur>
+		<id_auteur>BH</id_auteur>
 		<affiliation>Enseignant chercheur Laas</affiliation>
 		<annee_publication>2007</annee_publication>
 		<nombre_pages>400</nombre_pages>
@@ -132,8 +132,8 @@
 	<Article_Conference>
 		<id_production_scientifique>1</id_production_scientifique>
 		<titre>Remise en perspectives des réseaux</titre>
-		<nom_auteur>Dlm</nom_auteur>
-		<nom_auteur>Smith</nom_auteur>
+		<id_auteur>BH</id_auteur>
+		<id_auteur>AF</id_auteur>
 		<affiliation>Chercheur Laas</affiliation>
 		<affiliation>Directeur de Recherche</affiliation>
 		<annee_publication>2005</annee_publication>
@@ -145,9 +145,9 @@
 	<Article_Conference>
 		<id_production_scientifique>3</id_production_scientifique>
 		<titre>La multiplicité des atomes</titre>
-		<nom_auteur>Gonzalez</nom_auteur>
+		<id_auteur>DLM</id_auteur>
 		<affiliation>Directeur Recherche Laas</affiliation>
-		<nom_auteur>Tena</nom_auteur>
+		<id_auteur>JT</id_auteur>
 		<affiliation>Enseignant Chercheur</affiliation>
 		<annee_publication>2017</annee_publication>
 		<nombre_pages>350</nombre_pages>
@@ -158,7 +158,7 @@
 	<Article_Conference>
 		<id_production_scientifique>5</id_production_scientifique>
 		<titre>Les trous de vers à la maison</titre>
-		<nom_auteur>Ethan Sarwell</nom_auteur>
+		<id_auteur>JH</id_auteur>
 		<affiliation>Conférencier freelance</affiliation>
 		<annee_publication>2017</annee_publication>
 		<nombre_pages>11</nombre_pages>
@@ -183,9 +183,9 @@
         <Rapport_Recherche>
             <id_production_scientifique>4</id_production_scientifique>
             <titre>Les bénéfices d'un bon canapé</titre>
-            <nom_auteur>Dufour</nom_auteur>
+            <id_auteur>JH</id_auteur>
             <affiliation>Expert en sofa</affiliation>
-            <nom_auteur>Dlm</nom_auteur>
+            <id_auteur>DLM</id_auteur>
             <affiliation>Consultant santé</affiliation>
             <annee_publication>2016</annee_publication>
             <nombre_pages>420</nombre_pages>
@@ -226,5 +226,37 @@
 		<date_fin>24/12/17</date_fin>
 		<acronyme_equipe>E1</acronyme_equipe>
 	</Reunion_groupe>
+
+
+	<Auteur>
+		<id_auteur>DLM</id_auteur>
+		<nom>Alban de St-Cere</nom>
+		<affiliation>Super expert quantique en intramolecules binaires, surtout le mardi.</affiliation>
+	</Auteur>
+
+	<Auteur>
+		<id_auteur>BH</id_auteur>
+		<nom>Bastien le Hippie</nom>
+		<affiliation>Chercheur spécialisé en repos et détentes de tous types.</affiliation>
+	</Auteur>
+
+	<Auteur>
+		<id_auteur>JH</id_auteur>
+		<nom>Johnny Hallyday</nom>
+		<affiliation>Chanteur de chansons, majoritairement cultes.</affiliation>
+	</Auteur>
+
+	<Auteur>
+		<id_auteur>AF</id_auteur>
+		<nom>Adri le Fou</nom>
+		<affiliation>Gourou extreme des mécanismes de réflexion inversés concurentielles.</affiliation>
+	</Auteur>
+
+	<Auteur>
+		<id_auteur>JT</id_auteur>
+		<nom>Joseph le Tenace</nom>
+		<affiliation>Boss ultime de la puissance intra et inter universelle.(FlashScope/NoScope/HardScope/FrontScope/3.6NoScope)</affiliation>
+	</Auteur>
+
 
 </Laas>
