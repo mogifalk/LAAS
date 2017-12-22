@@ -59,10 +59,10 @@
     	<xsd:selector xpath="Production_Scientifique"/>
     	<xsd:field xpath="@id_production_scientifique"/>
 	</xsd:keyref>
-
-    <xsd:keyref name="equipe_ref" refer="cle_membre">
-        <xsd:selector xpath = "Equipe"/>
-        <xsd:field xpath="@acronyme_equipe"/>
+    <!-- clé bien faite  + mettre un @dans le xpath fait reference a un attribut, pas un element /!\-->
+    <xsd:keyref name="equipe_ref" refer="cle_equipe">
+        <xsd:selector xpath = "acronyme_equipe"/>
+        <xsd:field xpath="."/>
     </xsd:keyref>
 
 </xsd:element>
@@ -79,9 +79,11 @@
         </xsd:sequence>
     </xsd:complexType>
 
+    <!-- clé bien faite  + mettre un @dans le xpath fait reference a un attribut, pas un element /!\-->
+
     <xsd:key name="cle_equipe">
-        <xsd:selector xpath = "Equipe"/>
-        <xsd:field xpath = "@acronyme_equipe"/>
+        <xsd:selector xpath = "Equipe/acronyme_equipe"/>
+        <xsd:field xpath = "."/>
     </xsd:key>
 
     <xsd:keyref name="theme_ref" refer="cle_equipe">

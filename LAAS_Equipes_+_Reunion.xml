@@ -10,6 +10,7 @@
 			<email>badufour@laas.fr</email>
 			<titre_these>Reseaux multiples</titre_these>
 			<titre_these>Reseaux transverse</titre_these>
+			<!-- mettre une mauvaise valeur d'equipe pour faire un echec de compilation ==> good ! -->
             <acronyme_equipe>E1</acronyme_equipe>
 			<id_production_scientifique>article_gravitation</id_production_scientifique>
 		</Membre>
