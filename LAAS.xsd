@@ -59,6 +59,12 @@
     	<xsd:selector xpath="Production_Scientifique"/>
     	<xsd:field xpath="@id_production_scientifique"/>
 	</xsd:keyref>
+
+    <xsd:keyref name="equipe_ref" refer="cle_membre">
+        <xsd:selector xpath = "Equipe"/>
+        <xsd:field xpath="@acronyme_equipe"/>
+    </xsd:keyref>
+
 </xsd:element>
 
 <xsd:element name="Equipe">
@@ -66,10 +72,10 @@
     <xsd:complexType>
         <xsd:sequence>
             <xsd:element name="nom_equipe" type="xsd:string"/>
-            <xsd:element name="acronyme_equipe" type="xsd:string"/>
+            <xsd:element name="acronyme_equipe" type="xsd:token"/>
             <!-- ajout des attributs externes-->
-            <xsd:element name="acronyme_theme" type="xsd:string"/>
-            <xsd:element name="id_membre" type="xsd:token" maxOccurs="unbounded"/>
+            <xsd:element name="acronyme_theme" type="xsd:token"/>
+            <xsd:element name="id_membre" type="xsd:token"/>
         </xsd:sequence>
     </xsd:complexType>
 
@@ -99,7 +105,6 @@
 
         <!-- Ajout des attributs externes -->
         <xsd:element name="acronyme_equipe"  type="xsd:token"/>
-        <xsd:element name="id_membre"  type="xsd:token" maxOccurs="unbounded"/>
     </xsd:sequence>
 
 </xsd:complexType>
@@ -131,10 +136,6 @@
             <xsd:field xpath="@acronyme_equipe"/>
         </xsd:keyref>
 
-        <xsd:keyref name="membre_ref_en_cours" refer="cle_these_en_cours">
-            <xsd:selector xpath="Membre"/>
-            <xsd:field xpath="@id_membre"/>
-        </xsd:keyref>
     </xsd:element>
 
 
@@ -165,10 +166,6 @@
             <xsd:field xpath="@acronyme_equipe"/>
         </xsd:keyref>
 
-        <xsd:keyref name="membre_ref_soutenue" refer="cle_these_soutenue">
-            <xsd:selector xpath="Membre"/>
-            <xsd:field xpath="@id_membre"/>
-        </xsd:keyref>
     </xsd:element>
 
 

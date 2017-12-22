@@ -20,8 +20,7 @@
 			<prenom_membre>Adrien</prenom_membre>
 			<grade>DR1</grade>
 			<email>adgonzalez@laas.fr</email>
-			<titre_these>Reseaux multiples</titre_these>
-			<titre_these>Reseaux transverse</titre_these>
+			<titre_these>Reseaux</titre_these>
             <acronyme_equipe>E2</acronyme_equipe>
 			<id_production_scientifique>article_danger_wifi</id_production_scientifique>
 		</Membre>
@@ -32,7 +31,7 @@
 			<prenom_membre>Alban</prenom_membre>
 			<grade>CR2</grade>
 			<email>aldlm@laas.fr</email>
-			<titre_these>Reseaux</titre_these>
+			<titre_these>Reseaux multiples</titre_these>
             <acronyme_equipe>E1</acronyme_equipe>
 		</Membre>
 
@@ -43,7 +42,6 @@
 			<grade>CR1</grade>
 			<email>jutena@laas.fr</email>
 			<titre_these>Reseaux</titre_these>
-			<titre_these>Reseaux transverse</titre_these>
             <acronyme_equipe>E2</acronyme_equipe>
 			<id_production_scientifique>article_danger_wifi</id_production_scientifique>
 		</Membre>
@@ -64,7 +62,6 @@
         <nom_equipe>Equipe 1</nom_equipe>
         <acronyme_equipe>E1</acronyme_equipe>
         <acronyme_theme>RIA</acronyme_theme>
-        <id_membre>badufour</id_membre>
         <id_membre>aldlm</id_membre>
     </Equipe>
 
@@ -72,9 +69,7 @@
         <nom_equipe>Equipe 2</nom_equipe>
         <acronyme_equipe>E2</acronyme_equipe>
         <acronyme_theme>TEL</acronyme_theme>
-        <id_membre>adgonzalez</id_membre>
         <id_membre>jutena</id_membre>
-        <id_membre>josmith</id_membre>
     </Equipe>
 
 	<En_Cours>
@@ -82,9 +77,6 @@
 		<domaine>Reseau</domaine>
 		<id_production_scientifique>article_multiplicite_reseau</id_production_scientifique>
 		<acronyme_equipe>E1</acronyme_equipe>
-		<id_membre>badufour</id_membre>
-		<id_membre>adgonzalez</id_membre>
-		<id_membre>jutena</id_membre>
 		<date_debut>27/03/2016</date_debut>
 	</En_Cours>
 
@@ -93,8 +85,6 @@
 		<domaine>Reseaux</domaine>
 		<id_production_scientifique>etude_transversale_reseaux</id_production_scientifique>
 		<acronyme_equipe>E1</acronyme_equipe>
-		<id_membre>badufour</id_membre>
-		<id_membre>adgonzalez</id_membre>
 		<date_debut>18/03/2014</date_debut>
 		<date_fin>19/04/2015</date_fin>
 	</Soutenue>
@@ -104,8 +94,6 @@
 		<domaine>Reseaux</domaine>
 		<id_production_scientifique>remise_en_perspective_reseaux</id_production_scientifique>
 		<acronyme_equipe>E2</acronyme_equipe>
-		<id_membre>aldlm</id_membre>
-		<id_membre>josmith</id_membre>
 		<date_debut>18/03/2010</date_debut>
 		<date_fin>19/04/2011</date_fin>
 	</Soutenue>
@@ -224,7 +212,7 @@
 	<Theme>
 		<description>Robots et IA</description>
 		<acronyme_theme>RIA</acronyme_theme>
-		<id_membre>adgonzal</id_membre>
+		<id_membre>aldlm</id_membre>
         <acronyme_projet>RDMUMH</acronyme_projet>
 	</Theme>
 
@@ -239,7 +227,7 @@
         <nom_evenement>Intelligence artificielle et alcool : un mélange judicieux ?</nom_evenement>
         <date_debut>31/12/17</date_debut>
         <date_fin>02/01/18</date_fin>
-        <acronyme_equipe>E2</acronyme_equipe>
+        <acronyme_equipe>E1</acronyme_equipe>
         <acronyme_theme>RIA</acronyme_theme>
         <classe>A</classe>
     </Conference>
@@ -248,7 +236,7 @@
 		<nom_evenement>Mise en commun des recherches</nom_evenement>
 		<date_debut>24/12/17</date_debut>
 		<date_fin>24/12/17</date_fin>
-		<acronyme_equipe>E1</acronyme_equipe>
+		<acronyme_equipe>E2</acronyme_equipe>
 		<acronyme_theme>TEL</acronyme_theme>
 	</Reunion_groupe>
 
