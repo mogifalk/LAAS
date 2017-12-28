@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="LAAS.xsl"?>
+<LAAS>
+	<Membres>
+		<Membre>
+			<id_membre>badufour</id_membre>
+			<nom_membre>Dufour</nom_membre>
+			<prenom_membre>Bastien</prenom_membre>
+			<grade>CR1</grade>
+			<email>badufour@laas.fr</email>
+			<Theses_soutenue_encadrees titre_these="Reseaux transverse"/>
+            <Theses_en_cours_encadrees titre_these="Reseaux multiples"/>
+            <acronyme_equipe>E1</acronyme_equipe>
+			<Articles_conf_realises titre_article="Les réseaux c'est pas le zoo"/>
+		</Membre>
+
+		<Membre>
+			<id_membre>adgonzalez</id_membre>
+			<nom_membre>Gonzalez</nom_membre>
+			<prenom_membre>Adrien</prenom_membre>
+			<grade>DR1</grade>
+			<email>adgonzalez@laas.fr</email>
+			<Theses_soutenue_encadrees titre_these="Reseaux transverse"/>
+            <Theses_en_cours_encadrees titre_these="Reseaux multiples"/>
+            <acronyme_equipe>E2</acronyme_equipe>
+			<Articles_conf_realises titre_article="1,2... beaucoup"/>
+		</Membre>
+
+		<Membre>
+			<id_membre>aldlm</id_membre>
+			<nom_membre>LE_CARBONNIER_DE_LA_MORSANGLIERE</nom_membre>
+			<prenom_membre>Alban</prenom_membre>
+			<grade>CR2</grade>
+			<email>aldlm@laas.fr</email>
+			<Theses_soutenue_encadrees titre_these="Reseaux"/>
+            <acronyme_equipe>E1</acronyme_equipe>
+		</Membre>
+
+		<Membre>
+			<id_membre>jutena</id_membre>
+			<nom_membre>Tena</nom_membre>
+			<prenom_membre>Julien</prenom_membre>
+			<grade>CR1</grade>
+			<email>jutena@laas.fr</email>
+			<Theses_soutenue_encadrees titre_these="Reseaux"/>
+			<Theses_soutenue_encadrees titre_these="Reseaux transverse"/>
+            <acronyme_equipe>E2</acronyme_equipe>
+			<Articles_conf_realises titre_article="Des trous, des verts, des trous de vers"/>
+		</Membre>
+
+		<Membre>
+			<id_membre>josmith</id_membre>
+			<nom_membre>Smith</nom_membre>
+			<prenom_membre>John</prenom_membre>
+			<grade>DR1</grade>
+			<email>josmith@laas.fr</email>
+			<Theses_soutenue_encadrees titre_these="Reseaux"/>
+            <acronyme_equipe>E2</acronyme_equipe>
+			<Articles_conf_realises titre_article="Des trous, des verts, des trous de vers"/>
+		</Membre>
+	</Membres>
+
+    <Equipe>
+        <nom_equipe>Equipe 1</nom_equipe>
+        <acronyme_equipe>E1</acronyme_equipe>
+        <acronyme_theme>RIA</acronyme_theme>
+        <Membre_contenus membre="badufour"/>
+        <Membre_contenus membre="aldlm"/>
+    </Equipe>
+
+    <Equipe>
+        <nom_equipe>Equipe 2</nom_equipe>
+        <acronyme_equipe>E2</acronyme_equipe>
+        <acronyme_theme>TEL</acronyme_theme>
+		<Membre_contenus membre="adgonzalez"/>
+		<Membre_contenus membre="jutena"/>
+        <Membre_contenus membre="josmith"/>
+    </Equipe>
+
+	<En_Cours>
+		<domaine>Reseau</domaine>
+		<id_production_scientifique>1,2... beaucoup</id_production_scientifique>
+        <titre_these>Reseaux multiples</titre_these>
+		<date_debut>27/03/2016</date_debut>
+		<acronyme_equipe>E1</acronyme_equipe>
+		<Membre_contenus membre="badufour"/>
+		<Membre_contenus membre="adgonzalez"/>
+		<Membre_contenus membre="jutena"/>
+	</En_Cours>
+
+	<Soutenue>
+		<domaine>Reseaux</domaine>
+		<id_production_scientifique>etude_transversale_reseaux</id_production_scientifique>
+        <titre_these>Reseaux transverse</titre_these>
+		<date_debut>18/03/2014</date_debut>
+		<date_fin>19/04/2015</date_fin>
+
+		<acronyme_equipe>E1</acronyme_equipe>
+		<Membre_contenus membre="badufour"/>
+		<Membre_contenus membre="adgonzalez"/>
+	</Soutenue>
+
+	<Soutenue>
+		<domaine>Reseaux</domaine>
+		<id_production_scientifique>remise_en_perspective_reseaux</id_production_scientifique>
+        <titre_these>Reseaux</titre_these>
+		<date_debut>18/03/2010</date_debut>
+		<date_fin>19/04/2011</date_fin>
+
+		<acronyme_equipe>E2</acronyme_equipe>
+		<Membre_contenus membre="aldlm"/>
+		<Membre_contenus membre="josmith"/>
+	</Soutenue>
+
+    <Auteur>
+        <id_auteur>DLM</id_auteur>
+        <nom>Alban de St-Cere</nom>
+        <affiliation>Super expert quantique en intramolecules binaires, surtout le mardi.</affiliation>
+    </Auteur>
+
+    <Auteur>
+        <id_auteur>BH</id_auteur>
+        <nom>Bastien le Hippie</nom>
+        <affiliation>Chercheur spécialisé en repos et détentes de tous types.</affiliation>
+    </Auteur>
+
+    <Auteur>
+        <id_auteur>JH</id_auteur>
+        <nom>Johnny Hallyday</nom>
+        <affiliation>Chanteur de chansons, majoritairement cultes.</affiliation>
+    </Auteur>
+
+    <Auteur>
+        <id_auteur>AF</id_auteur>
+        <nom>Adri le Fou</nom>
+        <affiliation>Gourou extreme des mécanismes de réflexion inversés concurentielles.</affiliation>
+    </Auteur>
+
+    <Auteur>
+        <id_auteur>JT</id_auteur>
+        <nom>Joseph le Tenace</nom>
+        <affiliation>Boss ultime de la puissance intra et inter universelle.(FlashScope/NoScope/HardScope/FrontScope/3.6NoScope)</affiliation>
+    </Auteur>
+
+	<Revue>
+		<annee_publication>1996</annee_publication>
+		<nombre_pages>321</nombre_pages>
+		<nom_journal>Jardin et nucléarité</nom_journal>
+		<classe>A</classe>
+        <id_auteur>DLM</id_auteur>
+	</Revue>
+
+	<Revue>
+		<annee_publication>2007</annee_publication>
+		<nombre_pages>400</nombre_pages>
+		<nom_journal>Coup de foudre</nom_journal>
+		<classe>AA</classe>
+        <id_auteur>BH</id_auteur>
+	</Revue>
+
+	<Article_Conference>
+		<annee_publication>2005</annee_publication>
+		<nombre_pages>200</nombre_pages>
+		<nom_conf>Les réseaux c'est pas le zoo</nom_conf>
+		<classe>A</classe>
+        <id_auteur>BH</id_auteur>
+        <id_auteur>AF</id_auteur>
+	</Article_Conference>
+
+	<Article_Conference>
+		<annee_publication>2017</annee_publication>
+		<nombre_pages>350</nombre_pages>
+		<nom_conf>1,2... beaucoup</nom_conf>
+		<classe>C</classe>
+        <id_auteur>DLM</id_auteur>
+        <id_auteur>JT</id_auteur>
+	</Article_Conference>
+
+	<Article_Conference>
+		<annee_publication>2017</annee_publication>
+		<nombre_pages>11</nombre_pages>
+		<nom_conf>Des trous, des verts, des trous de vers</nom_conf>
+		<classe>B</classe>
+        <id_auteur>JH</id_auteur>
+	</Article_Conference>
+
+
+    <Partenaire>
+        <nom>Drozophou</nom>
+        <pays>Guatemala</pays>
+    </Partenaire>
+
+    <Projet_de_Recherche>
+        <titre_projet>Reproduction des mouches unijambistes en milieu humide</titre_projet>
+        <acronyme_projet>RDMUMH</acronyme_projet>
+        <date_debut>12/12/12</date_debut>
+        <duree>12 ans</duree>
+        <cout>12.0</cout>
+        <budget>12.12</budget>
+
+        <Rapport_Recherche>
+            <annee_publication>2016</annee_publication>
+            <nombre_pages>420</nombre_pages>
+            <nom_rapport_recherche>Les bénéfices d'un bon canapé</nom_rapport_recherche>
+            <id_auteur>JH</id_auteur>
+            <id_auteur>DLM</id_auteur>
+        </Rapport_Recherche>
+
+        <acronyme_equipe>E2</acronyme_equipe>
+        <id_membre>aldlm</id_membre>
+        <nom_partenaire>Drozophou</nom_partenaire>
+    </Projet_de_Recherche>
+
+	<Theme>
+		<description>Robots et IA</description>
+		<acronyme_theme>RIA</acronyme_theme>
+		<id_membre>adgonzalez</id_membre>
+        <acronyme_projet>RDMUMH</acronyme_projet>
+	</Theme>
+
+	<Theme>
+		<description>Téléportation</description>
+		<acronyme_theme>TEL</acronyme_theme>
+		<id_membre>adgonzalez</id_membre>
+        <acronyme_projet>RDMUMH</acronyme_projet>
+	</Theme>
+
+    <Conference>
+        <nom_evenement>Intelligence artificielle et alcool : un mélange judicieux ?</nom_evenement>
+        <date_debut>31/12/17</date_debut>
+        <date_fin>02/01/18</date_fin>
+        <acronyme_equipe>E2</acronyme_equipe>
+        <acronyme_theme>RIA</acronyme_theme>
+        <classe>A</classe>
+    </Conference>
+
+	<Reunion_groupe>
+		<nom_evenement>Mise en commun des recherches</nom_evenement>
+		<date_debut>24/12/17</date_debut>
+		<date_fin>24/12/17</date_fin>
+		<acronyme_equipe>E1</acronyme_equipe>
+		<acronyme_theme>TEL</acronyme_theme>
+	</Reunion_groupe>
+
+
+
+</LAAS>
