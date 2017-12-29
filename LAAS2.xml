@@ -11,7 +11,7 @@
 			<Theses_soutenue_encadrees titre_these="Reseaux transverse"/>
             <Theses_en_cours_encadrees titre_these="Reseaux multiples"/>
             <acronyme_equipe>E1</acronyme_equipe>
-			<Articles_conf_realises titre_article="Les réseaux c'est pas le zoo"/>
+			<Articles_Conf titre_article="Les réseaux c'est pas le zoo"/>
 		</Membre>
 
 		<Membre>
@@ -23,7 +23,7 @@
 			<Theses_soutenue_encadrees titre_these="Reseaux transverse"/>
             <Theses_en_cours_encadrees titre_these="Reseaux multiples"/>
             <acronyme_equipe>E2</acronyme_equipe>
-			<Articles_conf_realises titre_article="1,2... beaucoup"/>
+			<Articles_Conf titre_article="1,2... beaucoup"/>
 		</Membre>
 
 		<Membre>
@@ -45,7 +45,7 @@
 			<Theses_soutenue_encadrees titre_these="Reseaux"/>
 			<Theses_soutenue_encadrees titre_these="Reseaux transverse"/>
             <acronyme_equipe>E2</acronyme_equipe>
-			<Articles_conf_realises titre_article="Des trous, des verts, des trous de vers"/>
+			<Articles_Conf titre_article="Des trous, des verts, des trous de vers"/>
 		</Membre>
 
 		<Membre>
@@ -56,7 +56,7 @@
 			<email>josmith@laas.fr</email>
 			<Theses_soutenue_encadrees titre_these="Reseaux"/>
             <acronyme_equipe>E2</acronyme_equipe>
-			<Articles_conf_realises titre_article="Des trous, des verts, des trous de vers"/>
+			<Articles_Conf titre_article="Des trous, des verts, des trous de vers"/>
 		</Membre>
 	</Membres>
 
@@ -86,6 +86,7 @@
 		<Membre_contenus membre="badufour"/>
 		<Membre_contenus membre="adgonzalez"/>
 		<Membre_contenus membre="jutena"/>
+		<Rapports_Recherche titre_rapport="Les bénéfices d'un bon canapé"/>
 	</En_Cours>
 
 	<Soutenue>
@@ -98,6 +99,7 @@
 		<acronyme_equipe>E1</acronyme_equipe>
 		<Membre_contenus membre="badufour"/>
 		<Membre_contenus membre="adgonzalez"/>
+		<Revues titre_revue="Jardin et nucléarité"/>
 	</Soutenue>
 
 	<Soutenue>
@@ -110,6 +112,7 @@
 		<acronyme_equipe>E2</acronyme_equipe>
 		<Membre_contenus membre="aldlm"/>
 		<Membre_contenus membre="josmith"/>
+		<Articles_Conf titre_article="Les réseaux c'est pas le zoo"/>
 	</Soutenue>
 
     <Auteur>
