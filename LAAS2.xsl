@@ -488,7 +488,7 @@
                 <xsl:for-each select="LAAS/Conference">
                     <xsl:variable name="acro_equipe_current" select="acronyme_equipe"/>
                     <xsl:variable name="acro_theme_current" select="acronyme_theme"/>
-                    
+
                     <span class="blue">Conférence : </span>
                     <xsl:value-of select="nom_evenement"/>
                     <br/>

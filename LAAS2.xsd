@@ -262,7 +262,7 @@
 
                         <!-- Ajout des attributs externes -->
                         <xsd:element name="acronyme_equipe"  type="xsd:token"/>
-                        <xsd:element ref="Membres_contenus" maxOccurs="unbounded"/>
+                        <xsd:element ref="Membres_contenus" maxOccurs="3"/>
                         <xsd:element ref="Revues" maxOccurs="unbounded" minOccurs="0"/>
                         <xsd:element ref="Articles_Conf" maxOccurs="unbounded" minOccurs="0"/>
                         <xsd:element ref="Rapports_Recherche" maxOccurs="unbounded" minOccurs="0"/>
@@ -289,7 +289,7 @@
 
                         <!-- Ajout des attributs externes -->
                         <xsd:element name="acronyme_equipe"  type="xsd:token"/>
-                        <xsd:element ref="Membres_contenus"  maxOccurs="unbounded"/>
+                        <xsd:element ref="Membres_contenus"  maxOccurs="3"/>
                         <xsd:element ref="Revues" maxOccurs="unbounded" minOccurs="0"/>
                         <xsd:element ref="Articles_Conf" maxOccurs="unbounded" minOccurs="0"/>
                         <xsd:element ref="Rapports_Recherche" maxOccurs="unbounded" minOccurs="0"/>

@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e7b141e5-63a1-44c9-9854-198005f14b59" name="Default" comment="Fourth commit">
       <change beforePath="$PROJECT_DIR$/LAAS2.css" afterPath="$PROJECT_DIR$/LAAS2.css" />
-      <change beforePath="$PROJECT_DIR$/LAAS2.xml" afterPath="$PROJECT_DIR$/LAAS2.xml" />
+      <change beforePath="$PROJECT_DIR$/LAAS2.xsd" afterPath="$PROJECT_DIR$/LAAS2.xsd" />
       <change beforePath="$PROJECT_DIR$/LAAS2.xsl" afterPath="$PROJECT_DIR$/LAAS2.xsl" />
-      <change beforePath="$PROJECT_DIR$/OUTPUT.html" afterPath="$PROJECT_DIR$/OUTPUT.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,36 +13,6 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-            <file leaf-file-name="LAAS2.xsd" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/LAAS2.xsd">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="-6459">
-                    <caret line="189" column="31" lean-forward="false" selection-start-line="189" selection-start-column="23" selection-end-line="189" selection-end-column="31" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="LAAS2.xml" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/LAAS2.xml">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="601">
-                    <caret line="242" column="21" lean-forward="false" selection-start-line="242" selection-start-column="21" selection-end-line="242" selection-end-column="21" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
@@ -57,21 +26,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LAAS2.xsl" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LAAS2.xsl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LAAS2.xsl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-829">
-              <caret line="490" column="20" lean-forward="false" selection-start-line="490" selection-start-column="20" selection-end-line="490" selection-end-column="20" />
+            <state relative-caret-position="7135">
+              <caret line="441" column="88" lean-forward="true" selection-start-line="441" selection-start-column="88" selection-end-line="441" selection-end-column="88" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LAAS2.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LAAS2.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/LAAS2.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+            <state relative-caret-position="22">
+              <caret line="1" column="34" lean-forward="false" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -111,8 +80,10 @@
       <find>E1</find>
       <find>_contenus</find>
       <find>_contenu</find>
-      <find>solidaires</find>
       <find>Rapports</find>
+      <find>maxOcc</find>
+      <find>solidaires</find>
+      <find>Theme</find>
     </findStrings>
     <replaceStrings>
       <replace>id_auteur</replace>
@@ -137,10 +108,10 @@
       <list>
         <option value="$PROJECT_DIR$/LAAS.xsd" />
         <option value="$PROJECT_DIR$/LAAS_Equipes_+_Reunion.xml" />
-        <option value="$PROJECT_DIR$/LAAS2.xsd" />
-        <option value="$PROJECT_DIR$/LAAS2.css" />
         <option value="$PROJECT_DIR$/LAAS2.xml" />
         <option value="$PROJECT_DIR$/LAAS2.xsl" />
+        <option value="$PROJECT_DIR$/LAAS2.xsd" />
+        <option value="$PROJECT_DIR$/LAAS2.css" />
       </list>
     </option>
   </component>
@@ -150,7 +121,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-1" />
     <option name="y" value="26" />
     <option name="width" value="1922" />
@@ -330,7 +301,7 @@
       <workItem from="1514562659077" duration="914000" />
       <workItem from="1514560311592" duration="4394000" />
       <workItem from="1514564736551" duration="5828000" />
-      <workItem from="1514895984587" duration="18029000" />
+      <workItem from="1514895984587" duration="18751000" />
     </task>
     <task id="LOCAL-00001" summary="Second commit">
       <created>1513788477318</created>
@@ -357,10 +328,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40696000" />
+    <option name="totallyTimeSpent" value="41418000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="26" width="1922" height="1031" extended-state="6" />
+    <frame x="-1" y="26" width="1922" height="1031" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -632,10 +603,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LAAS2.css">
+    <entry file="file://$PROJECT_DIR$/LAAS2.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        <state relative-caret-position="622">
+          <caret line="242" column="21" lean-forward="false" selection-start-line="242" selection-start-column="21" selection-end-line="242" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -648,18 +619,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LAAS2.xml">
+    <entry file="file://$PROJECT_DIR$/LAAS2.xsl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="601">
-          <caret line="242" column="21" lean-forward="false" selection-start-line="242" selection-start-column="21" selection-end-line="242" selection-end-column="21" />
+        <state relative-caret-position="7135">
+          <caret line="441" column="88" lean-forward="true" selection-start-line="441" selection-start-column="88" selection-end-line="441" selection-end-column="88" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LAAS2.xsl">
+    <entry file="file://$PROJECT_DIR$/LAAS2.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-829">
-          <caret line="490" column="20" lean-forward="false" selection-start-line="490" selection-start-column="20" selection-end-line="490" selection-end-column="20" />
+        <state relative-caret-position="22">
+          <caret line="1" column="34" lean-forward="false" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
           <folding />
         </state>
       </provider>
