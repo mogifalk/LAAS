@@ -24,7 +24,7 @@
 
                 <h2>Membres du LAAS : </h2>
                 <xsl:for-each select="LAAS/Membres/Membre">
-                    <xsl:sort  select="nom_membre"></xsl:sort>
+                    <xsl:sort  select="nom_membre"/>
                     <p>
                         <span class="blue">Nom : </span>
                         <xsl:value-of select="nom_membre" />
@@ -43,6 +43,7 @@
 
                 <h2>Equipes du LAAS : </h2>
                 <xsl:for-each select="LAAS/Equipe">
+                    <xsl:sort select="nom_equipe"/>
                     <xsl:variable name="acro_equipe_current" select="acronyme_equipe"/>
                     <xsl:variable name="acro_theme_equipe" select="acronyme_theme"/>
                     <p>
@@ -64,7 +65,7 @@
 
                         <span class="blue">Membres de l'équipe : </span> <br/>
                         <xsl:for-each select="/LAAS/Membres/Membre">
-                            <xsl:sort  select="nom_membre"></xsl:sort>
+                            <xsl:sort  select="nom_membre"/>
                             <xsl:if test="acronyme_equipe=$acro_equipe_current">
                                 <span class="simple_indent"><xsl:value-of select="nom_membre"/>&#160;<xsl:value-of select="prenom_membre"/></span>
                                 <br/>
@@ -81,7 +82,7 @@
 
                 <h3>Thèses en cours de réalisation :</h3>
                 <xsl:for-each select="LAAS/En_Cours">
-                    <xsl:sort  select="titre_these"></xsl:sort>
+                    <xsl:sort  select="titre_these"/>
                     <xsl:variable name="acro_equipe_cadre" select="acronyme_equipe"/>
                     <p class="simple_indent">
                         <span class="blue">Titre de la thèse : </span>
@@ -111,7 +112,7 @@
                         <xsl:variable name="id_encadrant_current" select="@id_membre"/>
 
                             <xsl:for-each select="/LAAS/Membres/Membre">
-                                <xsl:sort  select="nom_membre"></xsl:sort>
+                                <xsl:sort  select="nom_membre"/>
                                 <xsl:if test="id_membre=$id_encadrant_current">
                                     <span class="double_indent">
                                         <xsl:value-of select="nom_membre"/>&#160;<xsl:value-of select="prenom_membre"/>
@@ -128,7 +129,7 @@
                             <xsl:variable name="rapport_current" select="@titre_rapport"/>
 
                             <xsl:for-each select="/LAAS/Projet_de_Recherche/Rapport_Recherche">
-                                <xsl:sort  select="nom_rapport_recherche"></xsl:sort>
+                                <xsl:sort  select="nom_rapport_recherche"/>
                                 <xsl:if test="nom_rapport_recherche=$rapport_current">
                                     <span class="double_indent" color="steelblue">
                                         <xsl:value-of select="nom_rapport_recherche"/> (<em>rapport de recherche</em>)
@@ -142,7 +143,7 @@
                             <xsl:variable name="revue_current" select="@titre_revue"/>
 
                             <xsl:for-each select="/LAAS/Revue">
-                                <xsl:sort  select="nom_journal"></xsl:sort>
+                                <xsl:sort  select="nom_journal"/>
                                 <xsl:if test="nom_journal=$revue_current">
                                     <span class="double_indent" color="steelblue">
                                         <xsl:value-of select="nom_journal"/> (<em>revue scientifique</em>)
@@ -156,7 +157,7 @@
                             <xsl:variable name="article_current" select="@titre_article"/>
 
                             <xsl:for-each select="/LAAS/Article_Conference">
-                                <xsl:sort  select="nom_conf"></xsl:sort>
+                                <xsl:sort  select="nom_conf"/>
                                 <xsl:if test="nom_conf=$article_current">
                                     <span class="double_indent" color="steelblue">
                                         <xsl:value-of select="nom_conf"/> (<em>article de conférence</em>)
@@ -172,7 +173,7 @@
 
                 <h3>Thèses soutenues :</h3>
                 <xsl:for-each select="LAAS/Soutenue">
-                    <xsl:sort  select="titre_these"></xsl:sort>
+                    <xsl:sort  select="titre_these"/>
                     <xsl:variable name="acro_equipe_cadre" select="acronyme_equipe"/>
                     <p class="simple_indent">
                         <span class="blue">Titre de la thèse : </span>
@@ -201,7 +202,7 @@
                             <xsl:variable name="id_encadrant_current" select="@id_membre"/>
 
                             <xsl:for-each select="/LAAS/Membres/Membre">
-                                <xsl:sort  select="nom_membre"></xsl:sort>
+                                <xsl:sort  select="nom_membre"/>
                                 <xsl:if test="id_membre=$id_encadrant_current">
                                     <span class="double_indent">
                                         <xsl:value-of select="nom_membre"/>&#160;<xsl:value-of select="prenom_membre"/>
@@ -217,7 +218,7 @@
                             <xsl:variable name="rapport_current" select="@titre_rapport"/>
 
                             <xsl:for-each select="/LAAS/Projet_de_Recherche/Rapport_Recherche">
-                                <xsl:sort  select="nom_rapport_recherche"></xsl:sort>
+                                <xsl:sort  select="nom_rapport_recherche"/>
                                 <xsl:if test="nom_rapport_recherche=$rapport_current">
                                     <span class="double_indent" color="steelblue">
                                         <xsl:value-of select="nom_rapport_recherche"/> (<em>rapport de recherche</em>)
@@ -231,7 +232,7 @@
                             <xsl:variable name="revue_current" select="@titre_revue"/>
 
                             <xsl:for-each select="/LAAS/Revue">
-                                <xsl:sort  select="nom_journal"></xsl:sort>
+                                <xsl:sort  select="nom_journal"/>
                                 <xsl:if test="nom_journal=$revue_current">
                                     <span class="double_indent" color="steelblue">
                                         <xsl:value-of select="nom_journal"/> (<em>revue scientifique</em>)
@@ -245,7 +246,7 @@
                             <xsl:variable name="article_current" select="@titre_article"/>
 
                             <xsl:for-each select="/LAAS/Article_Conference">
-                                <xsl:sort  select="nom_conf"></xsl:sort>
+                                <xsl:sort  select="nom_conf"/>
                                 <xsl:if test="nom_conf=$article_current">
                                     <span class="double_indent" color="steelblue">
                                         <xsl:value-of select="nom_conf"/> (<em>article de conférence</em>)
@@ -261,6 +262,7 @@
 
                 <h2>Auteurs liés au LAAS : </h2>
                 <xsl:for-each select="LAAS/Auteur">
+                    <xsl:sort select="nom"/>
                     <p>
                         <span class="blue">Nom : </span>
                         <xsl:value-of select="nom"/>
@@ -280,6 +282,7 @@
 
                 <h2>Revues scientifiques : </h2>
                 <xsl:for-each select="LAAS/Revue">
+                    <xsl:sort select="nom_journal"/>
                     <p>
                         <span class="blue">Nom de la revue: </span>
                         <xsl:value-of select="nom_journal"/>
@@ -304,7 +307,7 @@
                             <xsl:variable name="id_auteur_current" select="current()"/>
 
                             <xsl:for-each select="/LAAS/Auteur">
-                                <xsl:sort  select="nom"></xsl:sort>
+                                <xsl:sort  select="nom"/>
                                 <xsl:if test="id_auteur=$id_auteur_current">
                                     <span class="simple_indent">
                                         <xsl:value-of select="nom"/>
@@ -320,6 +323,7 @@
 
                 <h2>Articles de conférence : </h2>
                 <xsl:for-each select="LAAS/Article_Conference">
+                    <xsl:sort select="nom_conf"/>
                     <p>
                         <span class="blue">Titre de l'article : </span>
                         <xsl:value-of select="nom_conf"/>
@@ -344,7 +348,7 @@
                             <xsl:variable name="id_auteur_current" select="current()"/>
 
                             <xsl:for-each select="/LAAS/Auteur">
-                                <xsl:sort  select="nom"></xsl:sort>
+                                <xsl:sort  select="nom"/>
                                 <xsl:if test="id_auteur=$id_auteur_current">
                                     <span class="simple_indent">
                                         <xsl:value-of select="nom"/>
@@ -360,6 +364,7 @@
 
                 <h2>Partenaires du LAAS : </h2>
                 <xsl:for-each select="LAAS/Partenaire">
+                    <xsl:sort select="nom"/>
                     <p>
                         <span class="blue">Nom : </span>
                         <xsl:value-of select="nom"/>
@@ -375,6 +380,7 @@
 
                 <h2>Projet de Recherche : </h2>
                 <xsl:for-each select="LAAS/Projet_de_Recherche">
+                    <xsl:sort select="titre_projet"/>
                     <xsl:variable name="acro_equipe_current" select="acronyme_equipe"/>
                     <xsl:variable name="id_respo" select="id_membre"/>
                     <p>
@@ -445,7 +451,7 @@
                                 <xsl:variable name="id_auteur_current" select="current()"/>
 
                                 <xsl:for-each select="/LAAS/Auteur">
-                                    <xsl:sort  select="nom"></xsl:sort>
+                                    <xsl:sort  select="nom"/>
                                     <xsl:if test="id_auteur=$id_auteur_current">
                                         <span class="double_indent">
                                             <xsl:value-of select="nom"/>
@@ -462,6 +468,7 @@
 
                 <h2>Thèmes de recherche : </h2>
                 <xsl:for-each select="LAAS/Theme">
+                    <xsl:sort select="description"/>
                     <xsl:variable name="id_respo" select="id_membre"/>
                     <p>
                         <span class="blue">Theme : </span>
@@ -485,6 +492,7 @@
                 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
                 <h2>Conférences : </h2>
+                <xsl:sort select="nom_evemnement"/>
                 <xsl:for-each select="LAAS/Conference">
                     <xsl:variable name="acro_equipe_current" select="acronyme_equipe"/>
                     <xsl:variable name="acro_theme_current" select="acronyme_theme"/>
@@ -522,6 +530,7 @@
                 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
                 <h2>Réunions de groupe : </h2>
+                <xsl:sort select="nom_evenement"/>
                 <xsl:for-each select="LAAS/Reunion_groupe">
                     <xsl:variable name="acro_equipe_current" select="acronyme_equipe"/>
                     <xsl:variable name="acro_theme_current" select="acronyme_theme"/>
