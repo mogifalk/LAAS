@@ -64,7 +64,7 @@
 
 
         <xsd:keyref name="membre_equipe_ref" refer="cle_membre">
-            <xsd:selector xpath="./Equipe/Membre_contenus"/>
+            <xsd:selector xpath="./Equipe/Membres_contenus"/>
             <xsd:field xpath="@membre"/>
         </xsd:keyref>
 
@@ -76,7 +76,7 @@
         </xsd:keyref>
 
         <xsd:keyref name="membre_en_cours_ref" refer="cle_membre">
-            <xsd:selector xpath="./En_Cours/Membre_contenus"/>
+            <xsd:selector xpath="./En_Cours/Membres_contenus"/>
             <xsd:field xpath="@membre"/>
         </xsd:keyref>
 
@@ -103,7 +103,7 @@
         </xsd:keyref>
 
         <xsd:keyref name="membre_soutenue_ref" refer="cle_membre">
-            <xsd:selector xpath="./Soutenue/Membre_contenus"/>
+            <xsd:selector xpath="./Soutenue/Membres_contenus"/>
             <xsd:field xpath="@membre"/>
         </xsd:keyref>
 
@@ -220,9 +220,9 @@
 
     <!--elements utilisées pour les relations n-aires de Equipes-->
 
-    <xsd:element name="Membre_contenus">
+    <xsd:element name="Membres_contenus">
         <xsd:complexType>
-            <xsd:attribute name="membre" type="xsd:token"/>
+            <xsd:attribute name="id_membre" type="xsd:token"/>
         </xsd:complexType>
     </xsd:element>
 
@@ -233,7 +233,7 @@
                 <xsd:element name="acronyme_equipe" type="xsd:token"/>
                 <!-- ajout des attributs externes-->
                 <xsd:element name="acronyme_theme" type="xsd:token"/>
-                <xsd:element ref="Membre_contenus" maxOccurs="unbounded"/>
+                <xsd:element ref="Membres_contenus" maxOccurs="unbounded"/>
             </xsd:sequence>
         </xsd:complexType>
 
@@ -247,7 +247,6 @@
 
         <xsd:sequence>
             <xsd:element name="domaine"  type="xsd:string"/>
-            <xsd:element name="id_production_scientifique" type="xsd:string" maxOccurs="unbounded"/>
         </xsd:sequence>
 
     </xsd:complexType>
@@ -263,7 +262,7 @@
 
                         <!-- Ajout des attributs externes -->
                         <xsd:element name="acronyme_equipe"  type="xsd:token"/>
-                        <xsd:element ref="Membre_contenus" maxOccurs="unbounded"/>
+                        <xsd:element ref="Membres_contenus" maxOccurs="unbounded"/>
                         <xsd:element ref="Revues" maxOccurs="unbounded" minOccurs="0"/>
                         <xsd:element ref="Articles_Conf" maxOccurs="unbounded" minOccurs="0"/>
                         <xsd:element ref="Rapports_Recherche" maxOccurs="unbounded" minOccurs="0"/>
@@ -290,7 +289,7 @@
 
                         <!-- Ajout des attributs externes -->
                         <xsd:element name="acronyme_equipe"  type="xsd:token"/>
-                        <xsd:element ref="Membre_contenus"  maxOccurs="unbounded"/>
+                        <xsd:element ref="Membres_contenus"  maxOccurs="unbounded"/>
                         <xsd:element ref="Revues" maxOccurs="unbounded" minOccurs="0"/>
                         <xsd:element ref="Articles_Conf" maxOccurs="unbounded" minOccurs="0"/>
                         <xsd:element ref="Rapports_Recherche" maxOccurs="unbounded" minOccurs="0"/>
