@@ -7,6 +7,17 @@ p {
     font-weight: bold;
 }
 
+.blue_indent {
+    color: steelblue;
+    font-weight: bold;
+    margin-left: 2%;
+}
+
+#titre_rapport {
+    font-weight: bold;
+    margin-left: 2%;
+}
+
 h1 {
     color: steelblue;
     font-size: 20pt;

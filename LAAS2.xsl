@@ -22,18 +22,18 @@
 
                 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
-                <h2>Liste des membres du LAAS : </h2>
+                <h2>Membres du LAAS : </h2>
                 <xsl:for-each select="LAAS/Membres/Membre">
                     <xsl:sort  select="nom_membre"></xsl:sort>
                     <p>
                         <span class="blue">Nom : </span>
                         <xsl:value-of select="nom_membre" />
                         <br/>
-                        
+
                         <span class="blue">Prénom : </span>
                         <xsl:value-of select="prenom_membre" />
                         <br/>
-                        
+
                         <span class="blue">id : </span>
                         <xsl:value-of select="id_membre" />
                     </p>
@@ -41,7 +41,7 @@
 
                 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
-                <h2>Liste des équipes du LAAS : </h2>
+                <h2>Equipes du LAAS : </h2>
                 <xsl:for-each select="LAAS/Equipe">
                     <xsl:variable name="acro_equipe_current" select="acronyme_equipe"/>
                     <xsl:variable name="acro_theme_equipe" select="acronyme_theme"/>
@@ -49,11 +49,11 @@
                         <span class="blue"> Nom de l'équipe : </span>
                         <xsl:value-of select="nom_equipe"/>
                         <br/>
-                        
+
                         <span class="blue">Acronyme : </span>
                         <xsl:value-of select="acronyme_equipe" />
                         <br/>
-                        
+
                         <span class="blue">Thème de recherche : </span>
                         <xsl:for-each select="/LAAS/Theme">
                             <xsl:if test="acronyme_theme=$acro_theme_equipe">
@@ -61,7 +61,7 @@
                             </xsl:if>
                         </xsl:for-each>
                         <br/>
-                        
+
                         <span class="blue">Membres de l'équipe : </span> <br/>
                         <xsl:for-each select="/LAAS/Membres/Membre">
                             <xsl:sort  select="nom_membre"></xsl:sort>
@@ -95,7 +95,7 @@
                         <span class="blue">Date de début : </span>
                         <xsl:value-of select="date_debut" />
                         <br/>
-                        
+
                         <span class="blue">Equipe encadrante : </span>
                         <xsl:for-each select="/LAAS/Equipe">
                             <xsl:if test="acronyme_equipe=$acro_equipe_cadre">
@@ -259,7 +259,297 @@
 
                 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
-                <h2></h2>
+                <h2>Auteurs liés au LAAS : </h2>
+                <xsl:for-each select="LAAS/Auteur">
+                    <p>
+                        <span class="blue">Nom : </span>
+                        <xsl:value-of select="nom"/>
+                        <br/>
+
+                        <span class="blue">id : </span>
+                        <xsl:value-of select="id_auteur"/>
+                        <br/>
+
+                        <span class="blue">Affilitation : </span>
+                        <xsl:value-of select="affiliation"/>
+                        <br/>
+                    </p>
+                </xsl:for-each>
+
+                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+                <h2>Revues scientifiques : </h2>
+                <xsl:for-each select="LAAS/Revue">
+                    <p>
+                        <span class="blue">Nom de la revue: </span>
+                        <xsl:value-of select="nom_journal"/>
+                        <br/>
+
+                        <span class="blue">Année de publication : </span>
+                        <xsl:value-of select="annee_publication"/>
+                        <br/>
+
+                        <span class="blue">Nombre de pages : </span>
+                        <xsl:value-of select="nombre_pages"/>
+                        <br/>
+
+                        <span class="blue">Classe : </span>
+                        <xsl:value-of select="classe"/>
+                        <br/>
+
+                        <span class="blue">Auteur(s) participant(s) : </span>
+                        <br/>
+
+                        <xsl:for-each select="id_auteur">
+                            <xsl:variable name="id_auteur_current" select="current()"/>
+
+                            <xsl:for-each select="/LAAS/Auteur">
+                                <xsl:sort  select="nom"></xsl:sort>
+                                <xsl:if test="id_auteur=$id_auteur_current">
+                                    <span class="simple_indent">
+                                        <xsl:value-of select="nom"/>
+                                    </span>
+                                    <br/>
+                                </xsl:if>
+                            </xsl:for-each>
+                        </xsl:for-each>
+                    </p>
+                </xsl:for-each>
+
+                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+                <h2>Articles de conférence : </h2>
+                <xsl:for-each select="LAAS/Article_Conference">
+                    <p>
+                        <span class="blue">Titre de l'article : </span>
+                        <xsl:value-of select="nom_conf"/>
+                        <br/>
+
+                        <span class="blue">Année de publication : </span>
+                        <xsl:value-of select="annee_publication"/>
+                        <br/>
+
+                        <span class="blue">Nombre de pages : </span>
+                        <xsl:value-of select="nombre_pages"/>
+                        <br/>
+
+                        <span class="blue">Classe : </span>
+                        <xsl:value-of select="classe"/>
+                        <br/>
+
+                        <span class="blue">Auteur(s) participant(s) : </span>
+                        <br/>
+
+                        <xsl:for-each select="id_auteur">
+                            <xsl:variable name="id_auteur_current" select="current()"/>
+
+                            <xsl:for-each select="/LAAS/Auteur">
+                                <xsl:sort  select="nom"></xsl:sort>
+                                <xsl:if test="id_auteur=$id_auteur_current">
+                                    <span class="simple_indent">
+                                        <xsl:value-of select="nom"/>
+                                    </span>
+                                    <br/>
+                                </xsl:if>
+                            </xsl:for-each>
+                        </xsl:for-each>
+                    </p>
+                </xsl:for-each>
+
+                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+                <h2>Partenaires du LAAS : </h2>
+                <xsl:for-each select="LAAS/Partenaire">
+                    <p>
+                        <span class="blue">Nom : </span>
+                        <xsl:value-of select="nom"/>
+                        <br/>
+
+                        <span class="blue">Pays : </span>
+                        <xsl:value-of select="pays"/>
+                        <br/>
+                    </p>
+                </xsl:for-each>
+
+                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+                <h2>Projet de Recherche : </h2>
+                <xsl:for-each select="LAAS/Projet_de_Recherche">
+                    <xsl:variable name="acro_equipe_current" select="acronyme_equipe"/>
+                    <xsl:variable name="id_respo" select="id_membre"/>
+                    <p>
+                        <span class="blue">Titre du projet : </span>
+                        <xsl:value-of select="titre_projet"/>
+                        <br/>
+
+                        <span class="blue">Acronyme : </span>
+                        <xsl:value-of select="acronyme_projet"/>
+                        <br/>
+
+                        <span class="blue">Date de début : </span>
+                        <xsl:value-of select="date_debut"/>
+                        <br/>
+
+                        <span class="blue">Durée : </span>
+                        <xsl:value-of select="duree"/>
+                        <br/>
+
+                        <span class="blue">Cout : </span>
+                        <xsl:value-of select="cout"/>&#160;M€
+                        <br/>
+
+                        <span class="blue">Budget : </span>
+                        <xsl:value-of select="budget"/>&#160;M€
+                        <br/>
+
+                        <span class="blue">Responsable : </span>
+                            <xsl:for-each select="/LAAS/Membres/Membre">
+                                <xsl:if test="id_membre=$id_respo">
+                                    <xsl:value-of select="nom_membre"/>&#160;<xsl:value-of select="prenom_membre"/>
+                                    <br/>
+                                </xsl:if>
+                            </xsl:for-each>
+
+                        <span class="blue">Equipe : </span>
+                        <xsl:for-each select="/LAAS/Equipe">
+                            <xsl:if test="acronyme_equipe=$acro_equipe_current">
+                                <xsl:value-of select="nom_equipe" />
+                            </xsl:if>
+                        </xsl:for-each>
+                        <br/>
+
+                        <span class="blue">Partenaire(s) : </span>
+                        <br/>
+                        <xsl:for-each select="nom_partenaire">
+                            <span class="simple_indent"><xsl:value-of select="."/></span>
+                        <br/>
+                        </xsl:for-each>
+
+                        <span class="blue">Rapport(s) associé(s) : </span>
+                        <br/>
+
+                        <xsl:for-each select="Rapport_Recherche">
+                            <span id="titre_rapport"><xsl:value-of select="nom_rapport_recherche"/></span>
+                            <br/>
+                            <span class="blue_indent">Année de publication : </span>
+                            <xsl:value-of select="annee_publication"/>
+                            <br/>
+
+                            <span class="blue_indent">Nombre de pages : </span>
+                            <xsl:value-of select="nombre_pages"/>
+                            <br/>
+
+                            <span class="blue_indent">Auteur(s) participant(s) : </span>
+                            <br/>
+                            <xsl:for-each select="id_auteur">
+                                <xsl:variable name="id_auteur_current" select="current()"/>
+
+                                <xsl:for-each select="/LAAS/Auteur">
+                                    <xsl:sort  select="nom"></xsl:sort>
+                                    <xsl:if test="id_auteur=$id_auteur_current">
+                                        <span class="double_indent">
+                                            <xsl:value-of select="nom"/>
+                                        </span>
+                                        <br/>
+                                    </xsl:if>
+                                </xsl:for-each>
+                            </xsl:for-each>
+                        </xsl:for-each>
+                    </p>
+                </xsl:for-each>
+
+                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+                <h2>Thèmes de recherche : </h2>
+                <xsl:for-each select="LAAS/Theme">
+                    <xsl:variable name="id_respo" select="id_membre"/>
+                    <p>
+                        <span class="blue">Theme : </span>
+                        <xsl:value-of select="description"/>
+                        <br/>
+
+                        <span class="blue">Acronyme : </span>
+                        <xsl:value-of select="acronyme_theme"/>
+                        <br/>
+
+                        <span class="blue">Responsable : </span>
+                        <xsl:for-each select="/LAAS/Membres/Membre">
+                            <xsl:if test="id_membre=$id_respo">
+                                <xsl:value-of select="nom_membre"/>&#160;<xsl:value-of select="prenom_membre"/>
+                                <br/>
+                            </xsl:if>
+                        </xsl:for-each>
+                    </p>
+                </xsl:for-each>
+
+                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+                <h2>Conférences : </h2>
+                <xsl:for-each select="LAAS/Conference">
+                    <xsl:variable name="acro_equipe_current" select="acronyme_equipe"/>
+                    <xsl:variable name="acro_theme_current" select="acronyme_theme"/>
+                    
+                    <span class="blue">Conférence : </span>
+                    <xsl:value-of select="nom_evenement"/>
+                    <br/>
+
+                    <span class="blue">Date de début - date de fin : </span>
+                    <xsl:value-of select="date_debut"/> - <xsl:value-of select="date_fin"/>
+                    <br/>
+
+                    <span class="blue">Equipe organisatrice : </span>
+                    <xsl:for-each select="/LAAS/Equipe">
+                        <xsl:if test="acronyme_equipe=$acro_equipe_current">
+                            <xsl:value-of select="nom_equipe" />
+                        </xsl:if>
+                    </xsl:for-each>
+                    <br/>
+
+                    <span class="blue">Thème associé : </span>
+                    <xsl:for-each select="/LAAS/Theme">
+                        <xsl:if test="acronyme_theme=$acro_theme_current">
+                            <xsl:value-of select="description"/>
+                        </xsl:if>
+                    </xsl:for-each>
+                    <br/>
+
+                    <span class="blue">Classe : </span>
+                    <xsl:value-of select="classe"/>
+                    <br/>
+
+                </xsl:for-each>
+
+                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+                <h2>Réunions de groupe : </h2>
+                <xsl:for-each select="LAAS/Reunion_groupe">
+                    <xsl:variable name="acro_equipe_current" select="acronyme_equipe"/>
+                    <xsl:variable name="acro_theme_current" select="acronyme_theme"/>
+
+                    <span class="blue">Intitulé : </span>
+                    <xsl:value-of select="nom_evenement"/>
+                    <br/>
+
+                    <span class="blue">Date de début - date de fin : </span>
+                    <xsl:value-of select="date_debut"/> - <xsl:value-of select="date_fin"/>
+                    <br/>
+
+                    <span class="blue">Equipe concernée : </span>
+                    <xsl:for-each select="/LAAS/Equipe">
+                        <xsl:if test="acronyme_equipe=$acro_equipe_current">
+                            <xsl:value-of select="nom_equipe" />
+                        </xsl:if>
+                    </xsl:for-each>
+                    <br/>
+
+                    <span class="blue">Thème associé : </span>
+                    <xsl:for-each select="/LAAS/Theme">
+                        <xsl:if test="acronyme_theme=$acro_theme_current">
+                            <xsl:value-of select="description"/>
+                        </xsl:if>
+                    </xsl:for-each>
+                    <br/>
+                </xsl:for-each>
             </body>
         </html>
     </xsl:template>

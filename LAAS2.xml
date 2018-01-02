@@ -127,7 +127,7 @@
     <Auteur>
         <id_auteur>JH</id_auteur>
         <nom>Johnny Hallyday</nom>
-        <affiliation>Chanteur de chansons, majoritairement cultes.</affiliation>
+        <affiliation>Chanteur de chansons, majoritairement cultes</affiliation>
     </Auteur>
 
     <Auteur>
@@ -241,7 +241,5 @@
 		<acronyme_equipe>GTLS</acronyme_equipe>
 		<acronyme_theme>TEL</acronyme_theme>
 	</Reunion_groupe>
-
-
 
 </LAAS>
