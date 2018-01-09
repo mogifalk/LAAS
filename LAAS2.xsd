@@ -22,7 +22,7 @@
         </xsd:complexType>
 
 
-        <!--Clef externe Membre-->
+        <!--Clefs externes Membre-->
 
         <xsd:keyref name="these_soutenue_ref" refer="cle_these_soutenue">
             <xsd:selector xpath="./Membres/Membre/Theses_soutenue_encadrees"/>
@@ -40,17 +40,17 @@
         </xsd:keyref>
 
         <xsd:keyref name="revue_membre_ref" refer="cle_revue">
-            <xsd:selector xpath="./Membres/Membre/Revues_realisees"/>
+            <xsd:selector xpath="./Membres/Membre/Revues"/>
             <xsd:field xpath="@titre_revue"/>
         </xsd:keyref>
 
         <xsd:keyref name="article_membre_ref" refer="cle_article">
-            <xsd:selector xpath="./Membres/Membre/Articles_conf_realises"/>
+            <xsd:selector xpath="./Membres/Membre/Articles_Conf"/>
             <xsd:field xpath="@titre_article"/>
         </xsd:keyref>
 
         <xsd:keyref name="rapport_membre_ref" refer="cle_rapport">
-            <xsd:selector xpath="./Membres/Membre/Rapports_recherche_realises"/>
+            <xsd:selector xpath="./Membres/Membre/Rapports_Recherche"/>
             <xsd:field xpath="@titre_rapport"/>
         </xsd:keyref>
 
@@ -64,21 +64,35 @@
 
 
         <xsd:keyref name="membre_equipe_ref" refer="cle_membre">
-            <xsd:selector xpath="./Equipe/Membre_contenus"/>
+            <xsd:selector xpath="./Equipe/Membres_contenus"/>
             <xsd:field xpath="@membre"/>
         </xsd:keyref>
 
-        <!--clefs eternes En_cours-->
+        <!--clefs externes En_cours-->
 
         <xsd:keyref name="equipe_these_en_cours_ref" refer="cle_equipe">
             <xsd:selector xpath="./En_Cours"/>
             <xsd:field xpath="acronyme_equipe"/>
         </xsd:keyref>
 
-
         <xsd:keyref name="membre_en_cours_ref" refer="cle_membre">
-            <xsd:selector xpath="./En_Cours/Membre_contenus"/>
+            <xsd:selector xpath="./En_Cours/Membres_contenus"/>
             <xsd:field xpath="@membre"/>
+        </xsd:keyref>
+
+        <xsd:keyref name="these_en_cours_rapport_recherche" refer="cle_rapport">
+            <xsd:selector xpath="./En_Cours/Rapports_Recherche"/>
+            <xsd:field xpath="@titre_rapport"/>
+        </xsd:keyref>
+
+        <xsd:keyref name="these_en_cours_article" refer="cle_article">
+            <xsd:selector xpath="./En_Cours/Articles_Conf"/>
+            <xsd:field xpath="@titre_conf"/>
+        </xsd:keyref>
+
+        <xsd:keyref name="these_en_cours_revue" refer="cle_revue">
+            <xsd:selector xpath="./En_Cours/Revues"/>
+            <xsd:field xpath="@titre_revue"/>
         </xsd:keyref>
 
         <!--clefs externes Soutenue-->
@@ -88,10 +102,24 @@
             <xsd:field xpath="acronyme_equipe"/>
         </xsd:keyref>
 
-
         <xsd:keyref name="membre_soutenue_ref" refer="cle_membre">
-            <xsd:selector xpath="./Soutenue/Membre_contenus"/>
+            <xsd:selector xpath="./Soutenue/Membres_contenus"/>
             <xsd:field xpath="@membre"/>
+        </xsd:keyref>
+
+        <xsd:keyref name="these_soutenue_rapport_recherche" refer="cle_rapport">
+            <xsd:selector xpath="./Soutenue/Rapports_Recherche"/>
+            <xsd:field xpath="@titre_rapport"/>
+        </xsd:keyref>
+
+        <xsd:keyref name="these_soutenue_article" refer="cle_article">
+            <xsd:selector xpath="./Soutenue/Articles_Conf"/>
+            <xsd:field xpath="@titre_article"/>
+        </xsd:keyref>
+
+        <xsd:keyref name="these_soutenue_revue" refer="cle_revue">
+            <xsd:selector xpath="./Soutenue/Revues"/>
+            <xsd:field xpath="@titre_revue"/>
         </xsd:keyref>
 
         <!-- clefs externe Theme -->
@@ -125,7 +153,7 @@
 
     </xsd:element>
 
-    <!--Elements utilisés pour les relations n-aires entre de Membre-->
+    <!--Elements utilisés pour les relations n-aires entre Membre-->
 
     <xsd:element name="Membres">
         <xsd:complexType>
@@ -147,19 +175,19 @@
         </xsd:complexType>
     </xsd:element>
 
-    <xsd:element name="Revues_realisees">
+    <xsd:element name="Revues">
         <xsd:complexType>
             <xsd:attribute name="titre_revue" type="xsd:string"/>
         </xsd:complexType>
     </xsd:element>
 
-    <xsd:element name="Articles_conf_realises">
+    <xsd:element name="Articles_Conf">
         <xsd:complexType>
             <xsd:attribute name="titre_article" type="xsd:string"/>
         </xsd:complexType>
     </xsd:element>
 
-    <xsd:element name="Rapports_recherhe_realises">
+    <xsd:element name="Rapports_Recherche">
         <xsd:complexType>
             <xsd:attribute name="titre_rapport" type="xsd:string"/>
         </xsd:complexType>
@@ -177,9 +205,9 @@
                 <xsd:element ref="Theses_soutenue_encadrees" maxOccurs="unbounded" minOccurs="0"/>
                 <xsd:element ref="Theses_en_cours_encadrees" maxOccurs="unbounded" minOccurs="0"/>
                 <xsd:element name="acronyme_equipe" type="xsd:token"/>
-                <xsd:element ref="Revues_realisees" maxOccurs="unbounded" minOccurs="0"/>
-                <xsd:element ref="Articles_conf_realises" maxOccurs="unbounded" minOccurs="0"/>
-                <xsd:element ref="Rapports_recherhe_realises" maxOccurs="unbounded" minOccurs="0"/>
+                <xsd:element ref="Revues" maxOccurs="unbounded" minOccurs="0"/>
+                <xsd:element ref="Articles_Conf" maxOccurs="unbounded" minOccurs="0"/>
+                <xsd:element ref="Rapports_Recherche" maxOccurs="unbounded" minOccurs="0"/>
             </xsd:sequence>
         </xsd:complexType>
 
@@ -192,21 +220,20 @@
 
     <!--elements utilisées pour les relations n-aires de Equipes-->
 
-    <xsd:element name="Membre_contenus">
+    <xsd:element name="Membres_contenus">
         <xsd:complexType>
-            <xsd:attribute name="membre" type="xsd:token"/>
+            <xsd:attribute name="id_membre" type="xsd:token"/>
         </xsd:complexType>
     </xsd:element>
 
     <xsd:element name="Equipe">
-
         <xsd:complexType>
             <xsd:sequence>
                 <xsd:element name="nom_equipe" type="xsd:string"/>
                 <xsd:element name="acronyme_equipe" type="xsd:token"/>
                 <!-- ajout des attributs externes-->
                 <xsd:element name="acronyme_theme" type="xsd:token"/>
-                <xsd:element ref="Membre_contenus" maxOccurs="unbounded"/>
+                <xsd:element ref="Membres_contenus" maxOccurs="unbounded"/>
             </xsd:sequence>
         </xsd:complexType>
 
@@ -214,16 +241,12 @@
             <xsd:selector xpath = "."/>
             <xsd:field xpath = "acronyme_equipe"/>
         </xsd:key>
-
-
     </xsd:element>
 
     <xsd:complexType name = "These">
 
         <xsd:sequence>
             <xsd:element name="domaine"  type="xsd:string"/>
-            <xsd:element name="id_production_scientifique" type="xsd:string" maxOccurs="unbounded"/>
-
         </xsd:sequence>
 
     </xsd:complexType>
@@ -239,8 +262,10 @@
 
                         <!-- Ajout des attributs externes -->
                         <xsd:element name="acronyme_equipe"  type="xsd:token"/>
-                        <xsd:element ref="Membre_contenus" maxOccurs="unbounded"/>
-
+                        <xsd:element ref="Membres_contenus" maxOccurs="3"/>
+                        <xsd:element ref="Revues" maxOccurs="unbounded" minOccurs="0"/>
+                        <xsd:element ref="Articles_Conf" maxOccurs="unbounded" minOccurs="0"/>
+                        <xsd:element ref="Rapports_Recherche" maxOccurs="unbounded" minOccurs="0"/>
                     </xsd:sequence>
                 </xsd:extension>
             </xsd:complexContent>
@@ -250,9 +275,6 @@
             <xsd:selector xpath = "."/>
             <xsd:field xpath = "titre_these"/>
         </xsd:key>
-
-<!--IL MANQUE LES PROD SCIENT-->
-
     </xsd:element>
 
 
@@ -267,7 +289,10 @@
 
                         <!-- Ajout des attributs externes -->
                         <xsd:element name="acronyme_equipe"  type="xsd:token"/>
-                        <xsd:element ref="Membre_contenus"  maxOccurs="unbounded"/>
+                        <xsd:element ref="Membres_contenus"  maxOccurs="3"/>
+                        <xsd:element ref="Revues" maxOccurs="unbounded" minOccurs="0"/>
+                        <xsd:element ref="Articles_Conf" maxOccurs="unbounded" minOccurs="0"/>
+                        <xsd:element ref="Rapports_Recherche" maxOccurs="unbounded" minOccurs="0"/>
                     </xsd:sequence>
                 </xsd:extension>
             </xsd:complexContent>
@@ -277,10 +302,6 @@
             <xsd:selector xpath = "."/>
             <xsd:field xpath = "titre_these"/>
         </xsd:key>
-
-        <!--PAREIL QU'AVANT-->
-
-
     </xsd:element>
 
 
@@ -519,10 +540,6 @@
             <xsd:selector xpath = "Auteur"/>
             <xsd:field xpath = "@id_auteur"/>
         </xsd:key>
-
     </xsd:element>
 
-
-
 </xsd:schema>
-

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="LAAS.xsl"?>
+<?xml-stylesheet type="text/xsl" href="LAAS2.xsl"?>
 <LAAS>
 	<Membres>
 		<Membre>
@@ -10,8 +10,8 @@
 			<email>badufour@laas.fr</email>
 			<Theses_soutenue_encadrees titre_these="Reseaux transverse"/>
             <Theses_en_cours_encadrees titre_these="Reseaux multiples"/>
-            <acronyme_equipe>E1</acronyme_equipe>
-			<Articles_conf_realises titre_article="Les réseaux c'est pas le zoo"/>
+            <acronyme_equipe>GTLS</acronyme_equipe>
+			<Articles_Conf titre_article="Les réseaux c'est pas le zoo"/>
 		</Membre>
 
 		<Membre>
@@ -22,18 +22,18 @@
 			<email>adgonzalez@laas.fr</email>
 			<Theses_soutenue_encadrees titre_these="Reseaux transverse"/>
             <Theses_en_cours_encadrees titre_these="Reseaux multiples"/>
-            <acronyme_equipe>E2</acronyme_equipe>
-			<Articles_conf_realises titre_article="1,2... beaucoup"/>
+            <acronyme_equipe>MCHTS</acronyme_equipe>
+			<Articles_Conf titre_article="1,2... beaucoup"/>
 		</Membre>
 
 		<Membre>
 			<id_membre>aldlm</id_membre>
-			<nom_membre>LE_CARBONNIER_DE_LA_MORSANGLIERE</nom_membre>
+			<nom_membre>Le Carbonnier de la Morsanglière</nom_membre>
 			<prenom_membre>Alban</prenom_membre>
 			<grade>CR2</grade>
 			<email>aldlm@laas.fr</email>
 			<Theses_soutenue_encadrees titre_these="Reseaux"/>
-            <acronyme_equipe>E1</acronyme_equipe>
+            <acronyme_equipe>GTLS</acronyme_equipe>
 		</Membre>
 
 		<Membre>
@@ -44,8 +44,8 @@
 			<email>jutena@laas.fr</email>
 			<Theses_soutenue_encadrees titre_these="Reseaux"/>
 			<Theses_soutenue_encadrees titre_these="Reseaux transverse"/>
-            <acronyme_equipe>E2</acronyme_equipe>
-			<Articles_conf_realises titre_article="Des trous, des verts, des trous de vers"/>
+            <acronyme_equipe>MCHTS</acronyme_equipe>
+			<Articles_Conf titre_article="Des trous, des verts, des trous de vers"/>
 		</Membre>
 
 		<Membre>
@@ -55,61 +55,61 @@
 			<grade>DR1</grade>
 			<email>josmith@laas.fr</email>
 			<Theses_soutenue_encadrees titre_these="Reseaux"/>
-            <acronyme_equipe>E2</acronyme_equipe>
-			<Articles_conf_realises titre_article="Des trous, des verts, des trous de vers"/>
+            <acronyme_equipe>MCHTS</acronyme_equipe>
+			<Articles_Conf titre_article="Des trous, des verts, des trous de vers"/>
 		</Membre>
 	</Membres>
 
     <Equipe>
-        <nom_equipe>Equipe 1</nom_equipe>
-        <acronyme_equipe>E1</acronyme_equipe>
+        <nom_equipe>Les gentils</nom_equipe>
+        <acronyme_equipe>GTLS</acronyme_equipe>
         <acronyme_theme>RIA</acronyme_theme>
-        <Membre_contenus membre="badufour"/>
-        <Membre_contenus membre="aldlm"/>
+        <Membres_contenus id_membre="badufour"/>
+        <Membres_contenus id_membre="aldlm"/>
     </Equipe>
 
     <Equipe>
-        <nom_equipe>Equipe 2</nom_equipe>
-        <acronyme_equipe>E2</acronyme_equipe>
+        <nom_equipe>Les méchants</nom_equipe>
+        <acronyme_equipe>MCHTS</acronyme_equipe>
         <acronyme_theme>TEL</acronyme_theme>
-		<Membre_contenus membre="adgonzalez"/>
-		<Membre_contenus membre="jutena"/>
-        <Membre_contenus membre="josmith"/>
+		<Membres_contenus id_membre="adgonzalez"/>
+		<Membres_contenus id_membre="jutena"/>
+        <Membres_contenus id_membre="josmith"/>
     </Equipe>
 
 	<En_Cours>
-		<domaine>Reseau</domaine>
-		<id_production_scientifique>1,2... beaucoup</id_production_scientifique>
-        <titre_these>Reseaux multiples</titre_these>
+		<domaine>Réseau</domaine>
+		<titre_these>Reseaux multiples</titre_these>
 		<date_debut>27/03/2016</date_debut>
-		<acronyme_equipe>E1</acronyme_equipe>
-		<Membre_contenus membre="badufour"/>
-		<Membre_contenus membre="adgonzalez"/>
-		<Membre_contenus membre="jutena"/>
+		<acronyme_equipe>GTLS</acronyme_equipe>
+		<Membres_contenus id_membre="badufour"/>
+		<Membres_contenus id_membre="adgonzalez"/>
+		<Membres_contenus id_membre="jutena"/>
+		<Rapports_Recherche titre_rapport="Les bénéfices d'un bon canapé"/>
 	</En_Cours>
 
 	<Soutenue>
-		<domaine>Reseaux</domaine>
-		<id_production_scientifique>etude_transversale_reseaux</id_production_scientifique>
-        <titre_these>Reseaux transverse</titre_these>
+		<domaine>Réseau</domaine>
+		<titre_these>Les raies seaux : que contiennent elles ?</titre_these>
 		<date_debut>18/03/2014</date_debut>
 		<date_fin>19/04/2015</date_fin>
 
-		<acronyme_equipe>E1</acronyme_equipe>
-		<Membre_contenus membre="badufour"/>
-		<Membre_contenus membre="adgonzalez"/>
+		<acronyme_equipe>GTLS</acronyme_equipe>
+		<Membres_contenus id_membre="badufour"/>
+		<Membres_contenus id_membre="adgonzalez"/>
+		<Revues titre_revue="Jardin et nucléarité"/>
 	</Soutenue>
 
 	<Soutenue>
-		<domaine>Reseaux</domaine>
-		<id_production_scientifique>remise_en_perspective_reseaux</id_production_scientifique>
-        <titre_these>Reseaux</titre_these>
+		<domaine>Réseau</domaine>
+		<titre_these>Les réseaux solidaires</titre_these>
 		<date_debut>18/03/2010</date_debut>
 		<date_fin>19/04/2011</date_fin>
 
-		<acronyme_equipe>E2</acronyme_equipe>
-		<Membre_contenus membre="aldlm"/>
-		<Membre_contenus membre="josmith"/>
+		<acronyme_equipe>MCHTS</acronyme_equipe>
+		<Membres_contenus id_membre="aldlm"/>
+		<Membres_contenus id_membre="josmith"/>
+		<Articles_Conf titre_article="Les réseaux c'est pas le zoo"/>
 	</Soutenue>
 
     <Auteur>
@@ -127,7 +127,7 @@
     <Auteur>
         <id_auteur>JH</id_auteur>
         <nom>Johnny Hallyday</nom>
-        <affiliation>Chanteur de chansons, majoritairement cultes.</affiliation>
+        <affiliation>Chanteur de chansons, majoritairement cultes</affiliation>
     </Auteur>
 
     <Auteur>
@@ -206,7 +206,7 @@
             <id_auteur>DLM</id_auteur>
         </Rapport_Recherche>
 
-        <acronyme_equipe>E2</acronyme_equipe>
+        <acronyme_equipe>MCHTS</acronyme_equipe>
         <id_membre>aldlm</id_membre>
         <nom_partenaire>Drozophou</nom_partenaire>
     </Projet_de_Recherche>
@@ -229,7 +229,7 @@
         <nom_evenement>Intelligence artificielle et alcool : un mélange judicieux ?</nom_evenement>
         <date_debut>31/12/17</date_debut>
         <date_fin>02/01/18</date_fin>
-        <acronyme_equipe>E2</acronyme_equipe>
+        <acronyme_equipe>MCHTS</acronyme_equipe>
         <acronyme_theme>RIA</acronyme_theme>
         <classe>A</classe>
     </Conference>
@@ -238,10 +238,8 @@
 		<nom_evenement>Mise en commun des recherches</nom_evenement>
 		<date_debut>24/12/17</date_debut>
 		<date_fin>24/12/17</date_fin>
-		<acronyme_equipe>E1</acronyme_equipe>
+		<acronyme_equipe>GTLS</acronyme_equipe>
 		<acronyme_theme>TEL</acronyme_theme>
 	</Reunion_groupe>
-
-
 
 </LAAS>
