@@ -302,16 +302,16 @@
         <nom_evenement>Intelligence artificielle et conquête du Monde</nom_evenement>
         <date_debut>31/12/17</date_debut>
         <date_fin>02/01/18</date_fin>
-        <acronyme_equipe>MCHTS</acronyme_equipe>
         <classe>A</classe>
+		<acronyme_equipe>MCHTS</acronyme_equipe>
     </Conference>
 
 	<Conference>
 		<nom_evenement>Les super-pouvoirs</nom_evenement>
 		<date_debut>25/03/2018</date_debut>
 		<date_fin>02/01/18</date_fin>
-		<acronyme_equipe>GTLS</acronyme_equipe>
 		<classe>A</classe>
+		<acronyme_equipe>GTLS</acronyme_equipe>
 	</Conference>
 
 	<Reunion_groupe>

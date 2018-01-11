@@ -187,26 +187,16 @@
 
         <!-- clefs externe Réunion de groupe-->
 
-        <xsd:keyref name="reunion_groupe_equipe" refer="cle_evenement_reunion_groupe">
-            <xsd:selector xpath="./Equipe"/>
-            <xsd:field xpath="@acronyme_equipe"/>
+        <xsd:keyref name="reunion_groupe_equipe" refer="cle_equipe">
+            <xsd:selector xpath="./Reunion_groupe"/>
+            <xsd:field xpath="acronyme_equipe"/>
         </xsd:keyref>
 
         <!-- clefs externe Conférence-->
 
-        <xsd:keyref name="evenement_theme" refer="cle_evenement">
-            <xsd:selector xpath = "./Theme"/>
-            <xsd:field xpath="@acronyme_theme"/>
-        </xsd:keyref>
-
-        <xsd:keyref name="conference_equipe" refer="cle_evenement">
-            <xsd:selector xpath="./Equipe"/>
-            <xsd:field xpath="@acronyme_equipe"/>
-        </xsd:keyref>
-
-        <xsd:keyref name="respo_conference" refer="cle_evenement">
-            <xsd:selector xpath="./Membre"/>
-            <xsd:field xpath="@id_membre"/>
+        <xsd:keyref name="conference_equipe" refer="cle_equipe">
+            <xsd:selector xpath="./Conference"/>
+            <xsd:field xpath="acronyme_equipe"/>
         </xsd:keyref>
 
     </xsd:element>
@@ -467,8 +457,6 @@
             <xsd:element name="nom_evenement" type="xsd:string"/>
             <xsd:element name="date_debut" type="xsd:string"/>
             <xsd:element name="date_fin" type="xsd:string"/>
-            <!-- ajout des attributs externes-->
-            <xsd:element name="acronyme_equipe" type="xsd:token"/>
         </xsd:sequence>
     </xsd:complexType>
 
@@ -476,7 +464,12 @@
     <xsd:element name="Reunion_groupe">
         <xsd:complexType>
             <xsd:complexContent>
-                <xsd:extension base="Evenement"/>
+                <xsd:extension base="Evenement">
+                    <xsd:sequence>
+                        <!-- ajout des attributs externes-->
+                        <xsd:element name="acronyme_equipe" type="xsd:token"/>
+                    </xsd:sequence>
+                </xsd:extension>
             </xsd:complexContent>
         </xsd:complexType>
 
@@ -493,6 +486,8 @@
                 <xsd:extension base="Evenement">
                     <xsd:sequence>
                         <xsd:element name="classe" type="xsd:string"/>
+                        <!-- ajout des attributs externes-->
+                        <xsd:element name="acronyme_equipe" type="xsd:token"/>
                     </xsd:sequence>
                 </xsd:extension>
             </xsd:complexContent>
