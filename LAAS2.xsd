@@ -56,16 +56,14 @@
 
         <!--Clefs externes de Equipe-->
 
-
         <xsd:keyref name="theme_ref" refer="cle_theme">
             <xsd:selector xpath = "./Equipe"/>
             <xsd:field xpath="acronyme_theme"/>
         </xsd:keyref>
 
-
         <xsd:keyref name="membre_equipe_ref" refer="cle_membre">
-            <xsd:selector xpath="./Equipe/Membres_contenus"/>
-            <xsd:field xpath="@membre"/>
+            <xsd:selector xpath="./Equipe"/>
+            <xsd:field xpath="id_membre_respo"/>
         </xsd:keyref>
 
         <!--clefs externes En_cours-->
@@ -76,8 +74,8 @@
         </xsd:keyref>
 
         <xsd:keyref name="membre_en_cours_ref" refer="cle_membre">
-            <xsd:selector xpath="./En_Cours/Membres_contenus"/>
-            <xsd:field xpath="@membre"/>
+            <xsd:selector xpath="./En_Cours/Membre_encadrant"/>
+            <xsd:field xpath="@id_membre"/>
         </xsd:keyref>
 
         <xsd:keyref name="these_en_cours_rapport_recherche" refer="cle_rapport">
@@ -103,8 +101,8 @@
         </xsd:keyref>
 
         <xsd:keyref name="membre_soutenue_ref" refer="cle_membre">
-            <xsd:selector xpath="./Soutenue/Membres_contenus"/>
-            <xsd:field xpath="@membre"/>
+            <xsd:selector xpath="./Soutenue/Membre_encadrant"/>
+            <xsd:field xpath="@id_membre"/>
         </xsd:keyref>
 
         <xsd:keyref name="these_soutenue_rapport_recherche" refer="cle_rapport">
@@ -151,6 +149,51 @@
             <xsd:field xpath="nom_partenaire"/>
         </xsd:keyref>
 
+        <!-- clefs externe Rapport de recherche -->
+
+        <xsd:keyref name= "auteur_ref" refer = "cle_auteur">
+            <xsd:selector xpath = "./Projet_de_Recherche/Rapport_Recherche/Auteurs"/>
+            <xsd:field xpath = "@id_auteur"/>
+        </xsd:keyref>
+
+        <!-- clefs externe Articles de conférence -->
+
+        <xsd:keyref name= "auteur_ref_article" refer = "cle_auteur">
+            <xsd:selector xpath = "./Article_Conference/Auteurs"/>
+            <xsd:field xpath = "@id_auteur"/>
+        </xsd:keyref>
+
+        <!-- clefs externe Revue -->
+
+        <xsd:keyref name= "auteur_ref_revue" refer = "cle_auteur">
+            <xsd:selector xpath = "./Revue/Auteurs"/>
+            <xsd:field xpath = "@id_auteur"/>
+        </xsd:keyref>
+
+        <!-- clefs externe Réunion de groupe-->
+
+        <xsd:keyref name="reunion_groupe_equipe" refer="cle_evenement_reunion_groupe">
+            <xsd:selector xpath="./Equipe"/>
+            <xsd:field xpath="@acronyme_equipe"/>
+        </xsd:keyref>
+
+        <!-- clefs externe Conférence-->
+
+        <xsd:keyref name="evenement_theme" refer="cle_evenement">
+            <xsd:selector xpath = "./Theme"/>
+            <xsd:field xpath="@acronyme_theme"/>
+        </xsd:keyref>
+
+        <xsd:keyref name="conference_equipe" refer="cle_evenement">
+            <xsd:selector xpath="./Equipe"/>
+            <xsd:field xpath="@acronyme_equipe"/>
+        </xsd:keyref>
+
+        <xsd:keyref name="respo_conference" refer="cle_evenement">
+            <xsd:selector xpath="./Membre"/>
+            <xsd:field xpath="@id_membre"/>
+        </xsd:keyref>
+
     </xsd:element>
 
     <!--Elements utilisés pour les relations n-aires entre Membre-->
@@ -193,6 +236,8 @@
         </xsd:complexType>
     </xsd:element>
 
+    <!-- ###################################################### -->
+
     <xsd:element name="Membre">
         <xsd:complexType>
             <xsd:sequence>
@@ -218,22 +263,14 @@
 
     </xsd:element>
 
-    <!--elements utilisées pour les relations n-aires de Equipes-->
-
-    <xsd:element name="Membres_contenus">
-        <xsd:complexType>
-            <xsd:attribute name="id_membre" type="xsd:token"/>
-        </xsd:complexType>
-    </xsd:element>
-
     <xsd:element name="Equipe">
         <xsd:complexType>
             <xsd:sequence>
                 <xsd:element name="nom_equipe" type="xsd:string"/>
                 <xsd:element name="acronyme_equipe" type="xsd:token"/>
                 <!-- ajout des attributs externes-->
+                <xsd:element name="id_membre_respo" type="xsd:token"/>
                 <xsd:element name="acronyme_theme" type="xsd:token"/>
-                <xsd:element ref="Membres_contenus" maxOccurs="unbounded"/>
             </xsd:sequence>
         </xsd:complexType>
 
@@ -244,13 +281,16 @@
     </xsd:element>
 
     <xsd:complexType name = "These">
-
         <xsd:sequence>
             <xsd:element name="domaine"  type="xsd:string"/>
         </xsd:sequence>
-
     </xsd:complexType>
 
+    <xsd:element name="Membre_encadrant">
+        <xsd:complexType>
+            <xsd:attribute name="id_membre" type="xsd:token"/>
+        </xsd:complexType>
+    </xsd:element>
 
     <xsd:element name="En_Cours">
         <xsd:complexType>
@@ -262,7 +302,7 @@
 
                         <!-- Ajout des attributs externes -->
                         <xsd:element name="acronyme_equipe"  type="xsd:token"/>
-                        <xsd:element ref="Membres_contenus" maxOccurs="3"/>
+                        <xsd:element ref="Membre_encadrant" maxOccurs="3"/>
                         <xsd:element ref="Revues" maxOccurs="unbounded" minOccurs="0"/>
                         <xsd:element ref="Articles_Conf" maxOccurs="unbounded" minOccurs="0"/>
                         <xsd:element ref="Rapports_Recherche" maxOccurs="unbounded" minOccurs="0"/>
@@ -289,7 +329,7 @@
 
                         <!-- Ajout des attributs externes -->
                         <xsd:element name="acronyme_equipe"  type="xsd:token"/>
-                        <xsd:element ref="Membres_contenus"  maxOccurs="3"/>
+                        <xsd:element ref="Membre_encadrant"  maxOccurs="3"/>
                         <xsd:element ref="Revues" maxOccurs="unbounded" minOccurs="0"/>
                         <xsd:element ref="Articles_Conf" maxOccurs="unbounded" minOccurs="0"/>
                         <xsd:element ref="Rapports_Recherche" maxOccurs="unbounded" minOccurs="0"/>
@@ -320,7 +360,7 @@
                     <xsd:sequence>
                         <xsd:element name="nom_rapport_recherche" type="xsd:string"/>
                         <!--Attribut externe-->
-                        <xsd:element name="id_auteur" type="xsd:token" maxOccurs="unbounded"/>
+                        <xsd:element ref="Auteurs" maxOccurs="unbounded"/>
                     </xsd:sequence>
                 </xsd:extension>
             </xsd:complexContent>
@@ -330,18 +370,15 @@
             <xsd:selector xpath="."/>
             <xsd:field xpath="nom_rapport_recherche"/>
         </xsd:key>
-
-
-        <xsd:keyref name= "auteur_ref" refer = "cle_rapport">
-            <xsd:selector xpath = "Auteur"/>
-            <xsd:field xpath = "@id_auteur"/>
-        </xsd:keyref>
     </xsd:element>
 
-
+    <xsd:element name="Auteurs">
+        <xsd:complexType>
+            <xsd:attribute name="id_auteur" type="xsd:token"/>
+        </xsd:complexType>
+    </xsd:element>
 
     <xsd:element name="Article_Conference">
-
         <xsd:complexType>
             <xsd:complexContent>
                 <xsd:extension base="Production_Scientifique">
@@ -349,7 +386,7 @@
                         <xsd:element name="nom_conf" type="xsd:string"/>
                         <xsd:element name="classe" type="xsd:string"/>
                         <!--Attribut externe-->
-                        <xsd:element name="id_auteur" type="xsd:token" maxOccurs="unbounded"/>
+                        <xsd:element ref="Auteurs" maxOccurs="unbounded"/>
                     </xsd:sequence>
                 </xsd:extension>
             </xsd:complexContent>
@@ -359,18 +396,11 @@
             <xsd:selector xpath="."/>
             <xsd:field xpath="nom_conf"/>
         </xsd:key>
-
-        <xsd:keyref name= "auteur_ref_article" refer = "cle_article">
-            <xsd:selector xpath = "Auteur"/>
-            <xsd:field xpath = "@id_auteur"/>
-        </xsd:keyref>
-
     </xsd:element>
 
 
 
     <xsd:element name="Revue">
-
         <xsd:complexType>
             <xsd:complexContent>
                 <xsd:extension base="Production_Scientifique">
@@ -378,7 +408,7 @@
                         <xsd:element name="nom_journal" type="xsd:string"/>
                         <xsd:element name="classe" type="xsd:string"/>
                         <!--Attribut externe-->
-                        <xsd:element name="id_auteur" type="xsd:token" maxOccurs="unbounded"/>
+                        <xsd:element ref="Auteurs" maxOccurs="unbounded"/>
                     </xsd:sequence>
                 </xsd:extension>
             </xsd:complexContent>
@@ -388,17 +418,10 @@
             <xsd:selector xpath="."/>
             <xsd:field xpath="nom_journal"/>
         </xsd:key>
-
-        <xsd:keyref name= "auteur_ref_revue" refer = "cle_revue">
-            <xsd:selector xpath = "Auteur"/>
-            <xsd:field xpath = "@id_auteur"/>
-        </xsd:keyref>
-
     </xsd:element>
 
 
     <xsd:element name = "Theme">
-
         <xsd:complexType>
             <xsd:sequence>
                 <xsd:element name="description" type="xsd:string"/>
@@ -413,7 +436,6 @@
             <xsd:selector xpath = "."/>
             <xsd:field xpath = "acronyme_theme"/>
         </xsd:key>
-
     </xsd:element>
 
 
@@ -424,13 +446,11 @@
             <xsd:element name="date_fin" type="xsd:string"/>
             <!-- ajout des attributs externes-->
             <xsd:element name="acronyme_equipe" type="xsd:token"/>
-            <xsd:element name="acronyme_theme" type="xsd:token" />
         </xsd:sequence>
     </xsd:complexType>
 
 
     <xsd:element name="Reunion_groupe">
-
         <xsd:complexType>
             <xsd:complexContent>
                 <xsd:extension base="Evenement"/>
@@ -441,17 +461,6 @@
             <xsd:selector xpath = "Evenement"/>
             <xsd:field xpath = "@nom_evenement"/>
         </xsd:key>
-
-        <xsd:keyref name="reunion_groupe_equipe" refer="cle_evenement_reunion_groupe">
-            <xsd:selector xpath="Equipe"/>
-            <xsd:field xpath="@acronyme_equipe"/>
-        </xsd:keyref>
-
-        <xsd:keyref name="reunion_groupe_theme" refer="cle_evenement_reunion_groupe">
-            <xsd:selector xpath = "Theme"/>
-            <xsd:field xpath="@acronyme_theme"/>
-        </xsd:keyref>
-
     </xsd:element>
 
 
@@ -470,22 +479,8 @@
             <xsd:selector xpath = "Evenement"/>
             <xsd:field xpath = "@nom_evenement"/>
         </xsd:key>
-
-        <xsd:keyref name="evenement_theme" refer="cle_evenement">
-            <xsd:selector xpath = "Theme"/>
-            <xsd:field xpath="@acronyme_theme"/>
-        </xsd:keyref>
-
-        <xsd:keyref name="conference_equipe" refer="cle_evenement">
-            <xsd:selector xpath="Equipe"/>
-            <xsd:field xpath="@acronyme_equipe"/>
-        </xsd:keyref>
-
-        <xsd:keyref name="respo_conference" refer="cle_evenement">
-            <xsd:selector xpath="Membre"/>
-            <xsd:field xpath="@id_membre"/>
-        </xsd:keyref>
     </xsd:element>
+
 
     <xsd:element name="Projet_de_Recherche">
         <xsd:complexType>
@@ -537,8 +532,8 @@
         </xsd:complexType>
 
         <xsd:key name="cle_auteur">
-            <xsd:selector xpath = "Auteur"/>
-            <xsd:field xpath = "@id_auteur"/>
+            <xsd:selector xpath = "."/>
+            <xsd:field xpath = "id_auteur"/>
         </xsd:key>
     </xsd:element>
 

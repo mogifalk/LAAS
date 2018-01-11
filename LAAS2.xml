@@ -8,7 +8,7 @@
 			<prenom_membre>Bastien</prenom_membre>
 			<grade>CR1</grade>
 			<email>badufour@laas.fr</email>
-			<Theses_soutenue_encadrees titre_these="Reseaux transverse"/>
+			<Theses_soutenue_encadrees titre_these="Les réseaux solidaires"/>
             <Theses_en_cours_encadrees titre_these="Reseaux multiples"/>
             <acronyme_equipe>GTLS</acronyme_equipe>
 			<Articles_Conf titre_article="Les réseaux c'est pas le zoo"/>
@@ -20,7 +20,7 @@
 			<prenom_membre>Adrien</prenom_membre>
 			<grade>DR1</grade>
 			<email>adgonzalez@laas.fr</email>
-			<Theses_soutenue_encadrees titre_these="Reseaux transverse"/>
+			<Theses_soutenue_encadrees titre_these="Les réseaux solidaires"/>
             <Theses_en_cours_encadrees titre_these="Reseaux multiples"/>
             <acronyme_equipe>MCHTS</acronyme_equipe>
 			<Articles_Conf titre_article="1,2... beaucoup"/>
@@ -32,7 +32,7 @@
 			<prenom_membre>Alban</prenom_membre>
 			<grade>CR2</grade>
 			<email>aldlm@laas.fr</email>
-			<Theses_soutenue_encadrees titre_these="Reseaux"/>
+			<Theses_soutenue_encadrees titre_these="Les réseaux solidaires"/>
             <acronyme_equipe>GTLS</acronyme_equipe>
 		</Membre>
 
@@ -42,8 +42,8 @@
 			<prenom_membre>Julien</prenom_membre>
 			<grade>CR1</grade>
 			<email>jutena@laas.fr</email>
-			<Theses_soutenue_encadrees titre_these="Reseaux"/>
-			<Theses_soutenue_encadrees titre_these="Reseaux transverse"/>
+			<Theses_soutenue_encadrees titre_these="Les réseaux solidaires"/>
+			<Theses_soutenue_encadrees titre_these="Les raies seaux : que contiennent elles ?"/>
             <acronyme_equipe>MCHTS</acronyme_equipe>
 			<Articles_Conf titre_article="Des trous, des verts, des trous de vers"/>
 		</Membre>
@@ -54,7 +54,7 @@
 			<prenom_membre>John</prenom_membre>
 			<grade>DR1</grade>
 			<email>josmith@laas.fr</email>
-			<Theses_soutenue_encadrees titre_these="Reseaux"/>
+			<Theses_soutenue_encadrees titre_these="Les raies seaux : que contiennent elles ?"/>
             <acronyme_equipe>MCHTS</acronyme_equipe>
 			<Articles_Conf titre_article="Des trous, des verts, des trous de vers"/>
 		</Membre>
@@ -63,18 +63,15 @@
     <Equipe>
         <nom_equipe>Les gentils</nom_equipe>
         <acronyme_equipe>GTLS</acronyme_equipe>
+		<id_membre_respo>badufour</id_membre_respo>
         <acronyme_theme>RIA</acronyme_theme>
-        <Membres_contenus id_membre="badufour"/>
-        <Membres_contenus id_membre="aldlm"/>
     </Equipe>
 
     <Equipe>
         <nom_equipe>Les méchants</nom_equipe>
         <acronyme_equipe>MCHTS</acronyme_equipe>
+		<id_membre_respo>jutena</id_membre_respo>
         <acronyme_theme>TEL</acronyme_theme>
-		<Membres_contenus id_membre="adgonzalez"/>
-		<Membres_contenus id_membre="jutena"/>
-        <Membres_contenus id_membre="josmith"/>
     </Equipe>
 
 	<En_Cours>
@@ -82,9 +79,9 @@
 		<titre_these>Reseaux multiples</titre_these>
 		<date_debut>27/03/2016</date_debut>
 		<acronyme_equipe>GTLS</acronyme_equipe>
-		<Membres_contenus id_membre="badufour"/>
-		<Membres_contenus id_membre="adgonzalez"/>
-		<Membres_contenus id_membre="jutena"/>
+		<Membre_encadrant id_membre="badufour"/>
+		<Membre_encadrant id_membre="adgonzalez"/>
+		<Membre_encadrant id_membre="jutena"/>
 		<Rapports_Recherche titre_rapport="Les bénéfices d'un bon canapé"/>
 	</En_Cours>
 
@@ -95,8 +92,8 @@
 		<date_fin>19/04/2015</date_fin>
 
 		<acronyme_equipe>GTLS</acronyme_equipe>
-		<Membres_contenus id_membre="badufour"/>
-		<Membres_contenus id_membre="adgonzalez"/>
+		<Membre_encadrant id_membre="badufour"/>
+		<Membre_encadrant id_membre="adgonzalez"/>
 		<Revues titre_revue="Jardin et nucléarité"/>
 	</Soutenue>
 
@@ -107,8 +104,8 @@
 		<date_fin>19/04/2011</date_fin>
 
 		<acronyme_equipe>MCHTS</acronyme_equipe>
-		<Membres_contenus id_membre="aldlm"/>
-		<Membres_contenus id_membre="josmith"/>
+		<Membre_encadrant id_membre="aldlm"/>
+		<Membre_encadrant id_membre="josmith"/>
 		<Articles_Conf titre_article="Les réseaux c'est pas le zoo"/>
 	</Soutenue>
 
@@ -127,7 +124,7 @@
     <Auteur>
         <id_auteur>JH</id_auteur>
         <nom>Johnny Hallyday</nom>
-        <affiliation>Chanteur de chansons, majoritairement cultes</affiliation>
+        <affiliation>Chanteur de chansons, majoritairement cultes.</affiliation>
     </Auteur>
 
     <Auteur>
@@ -139,7 +136,7 @@
     <Auteur>
         <id_auteur>JT</id_auteur>
         <nom>Joseph le Tenace</nom>
-        <affiliation>Boss ultime de la puissance intra et inter universelle.(FlashScope/NoScope/HardScope/FrontScope/3.6NoScope)</affiliation>
+        <affiliation>Boss ultime de la puissance intra et inter universelle.</affiliation>
     </Auteur>
 
 	<Revue>
@@ -147,7 +144,7 @@
 		<nombre_pages>321</nombre_pages>
 		<nom_journal>Jardin et nucléarité</nom_journal>
 		<classe>A</classe>
-        <id_auteur>DLM</id_auteur>
+		<Auteurs id_auteur="DLM"/>
 	</Revue>
 
 	<Revue>
@@ -155,7 +152,7 @@
 		<nombre_pages>400</nombre_pages>
 		<nom_journal>Coup de foudre</nom_journal>
 		<classe>AA</classe>
-        <id_auteur>BH</id_auteur>
+		<Auteurs id_auteur="BH"/>
 	</Revue>
 
 	<Article_Conference>
@@ -163,8 +160,8 @@
 		<nombre_pages>200</nombre_pages>
 		<nom_conf>Les réseaux c'est pas le zoo</nom_conf>
 		<classe>A</classe>
-        <id_auteur>BH</id_auteur>
-        <id_auteur>AF</id_auteur>
+		<Auteurs id_auteur="BH"/>
+		<Auteurs id_auteur="AF"/>
 	</Article_Conference>
 
 	<Article_Conference>
@@ -172,8 +169,8 @@
 		<nombre_pages>350</nombre_pages>
 		<nom_conf>1,2... beaucoup</nom_conf>
 		<classe>C</classe>
-        <id_auteur>DLM</id_auteur>
-        <id_auteur>JT</id_auteur>
+		<Auteurs id_auteur="DLM"/>
+		<Auteurs id_auteur="JT"/>
 	</Article_Conference>
 
 	<Article_Conference>
@@ -181,14 +178,23 @@
 		<nombre_pages>11</nombre_pages>
 		<nom_conf>Des trous, des verts, des trous de vers</nom_conf>
 		<classe>B</classe>
-        <id_auteur>JH</id_auteur>
+		<Auteurs id_auteur="JH"/>
 	</Article_Conference>
 
-
-    <Partenaire>
+	<Partenaire>
         <nom>Drozophou</nom>
         <pays>Guatemala</pays>
     </Partenaire>
+
+	<Partenaire>
+		<nom>ARC Elec</nom>
+		<pays>Taiwan</pays>
+	</Partenaire>
+
+	<Partenaire>
+		<nom>Infino REA</nom>
+		<pays>USA</pays>
+	</Partenaire>
 
     <Projet_de_Recherche>
         <titre_projet>Reproduction des mouches unijambistes en milieu humide</titre_projet>
@@ -202,14 +208,42 @@
             <annee_publication>2016</annee_publication>
             <nombre_pages>420</nombre_pages>
             <nom_rapport_recherche>Les bénéfices d'un bon canapé</nom_rapport_recherche>
-            <id_auteur>JH</id_auteur>
-            <id_auteur>DLM</id_auteur>
+			<Auteurs id_auteur="JH"/>
+			<Auteurs id_auteur="DLM"/>
         </Rapport_Recherche>
 
         <acronyme_equipe>MCHTS</acronyme_equipe>
         <id_membre>aldlm</id_membre>
         <nom_partenaire>Drozophou</nom_partenaire>
     </Projet_de_Recherche>
+
+	<Projet_de_Recherche>
+		<titre_projet>Voyage Paris-NewYork en 0 secondes</titre_projet>
+		<acronyme_projet>PNY</acronyme_projet>
+		<date_debut>4/09/2017</date_debut>
+		<duree>15 ans</duree>
+		<cout>53</cout>
+		<budget>61</budget>
+
+		<Rapport_Recherche>
+			<annee_publication>2017</annee_publication>
+			<nombre_pages>614</nombre_pages>
+			<nom_rapport_recherche>Desintégration particulaire</nom_rapport_recherche>
+			<Auteurs id_auteur="DLM"/>
+		</Rapport_Recherche>
+
+		<Rapport_Recherche>
+			<annee_publication>2018</annee_publication>
+			<nombre_pages>124</nombre_pages>
+			<nom_rapport_recherche>Reconstruction par l'absurde</nom_rapport_recherche>
+			<Auteurs id_auteur="JH"/>
+			<Auteurs id_auteur="DLM"/>
+		</Rapport_Recherche>
+
+		<acronyme_equipe>MCHTS</acronyme_equipe>
+		<id_membre>aldlm</id_membre>
+		<nom_partenaire>Drozophou</nom_partenaire>
+	</Projet_de_Recherche>
 
 	<Theme>
 		<description>Robots et IA</description>
@@ -225,21 +259,48 @@
         <acronyme_projet>RDMUMH</acronyme_projet>
 	</Theme>
 
+	<Theme>
+		<description>Génôme des chatons</description>
+		<acronyme_theme>GCH</acronyme_theme>
+		<id_membre>jutena</id_membre>
+		<acronyme_projet>RDMUMH</acronyme_projet>
+	</Theme>
+
     <Conference>
-        <nom_evenement>Intelligence artificielle et alcool : un mélange judicieux ?</nom_evenement>
+        <nom_evenement>Intelligence artificielle et conquête du Monde</nom_evenement>
         <date_debut>31/12/17</date_debut>
         <date_fin>02/01/18</date_fin>
         <acronyme_equipe>MCHTS</acronyme_equipe>
-        <acronyme_theme>RIA</acronyme_theme>
         <classe>A</classe>
     </Conference>
+
+	<Conference>
+		<nom_evenement>Les super-pouvoirs</nom_evenement>
+		<date_debut>25/03/2018</date_debut>
+		<date_fin>02/01/18</date_fin>
+		<acronyme_equipe>GTLS</acronyme_equipe>
+		<classe>A</classe>
+	</Conference>
 
 	<Reunion_groupe>
 		<nom_evenement>Mise en commun des recherches</nom_evenement>
 		<date_debut>24/12/17</date_debut>
 		<date_fin>24/12/17</date_fin>
 		<acronyme_equipe>GTLS</acronyme_equipe>
-		<acronyme_theme>TEL</acronyme_theme>
+	</Reunion_groupe>
+
+	<Reunion_groupe>
+		<nom_evenement>Pot de départ de Jean-Mi</nom_evenement>
+		<date_debut>28/02/2018</date_debut>
+		<date_fin>28/02/2018</date_fin>
+		<acronyme_equipe>GTLS</acronyme_equipe>
+	</Reunion_groupe>
+
+	<Reunion_groupe>
+		<nom_evenement>Brainstorming en crocks</nom_evenement>
+		<date_debut>12/01/2018</date_debut>
+		<date_fin>14/01/2018</date_fin>
+		<acronyme_equipe>MCHTS</acronyme_equipe>
 	</Reunion_groupe>
 
 </LAAS>
