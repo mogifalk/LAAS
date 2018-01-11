@@ -144,7 +144,8 @@
 		<nombre_pages>321</nombre_pages>
 		<nom_journal>Jardin et nucléarité</nom_journal>
 		<classe>A</classe>
-		<Auteurs id_auteur="DLM"/>
+		<Auteur_production_externe id_auteur="DLM"/>
+		<Auteur_production_laas id_auteur="badufour"/>
 	</Revue>
 
 	<Revue>
@@ -152,7 +153,8 @@
 		<nombre_pages>400</nombre_pages>
 		<nom_journal>Coup de foudre</nom_journal>
 		<classe>AA</classe>
-		<Auteurs id_auteur="BH"/>
+		<Auteur_production_externe id_auteur="BH"/>
+		<Auteur_production_laas id_auteur="jutena"/>
 	</Revue>
 
 	<Article_Conference>
@@ -160,8 +162,8 @@
 		<nombre_pages>200</nombre_pages>
 		<nom_conf>Les réseaux c'est pas le zoo</nom_conf>
 		<classe>A</classe>
-		<Auteurs id_auteur="BH"/>
-		<Auteurs id_auteur="AF"/>
+		<Auteur_production_externe id_auteur="BH"/>
+		<Auteur_production_laas id_auteur="adgonzalez"/>
 	</Article_Conference>
 
 	<Article_Conference>
@@ -169,8 +171,8 @@
 		<nombre_pages>350</nombre_pages>
 		<nom_conf>1,2... beaucoup</nom_conf>
 		<classe>C</classe>
-		<Auteurs id_auteur="DLM"/>
-		<Auteurs id_auteur="JT"/>
+		<Auteur_production_externe id_auteur="DLM"/>
+		<Auteur_production_laas id_auteur="aldlm"/>
 	</Article_Conference>
 
 	<Article_Conference>
@@ -178,7 +180,7 @@
 		<nombre_pages>11</nombre_pages>
 		<nom_conf>Des trous, des verts, des trous de vers</nom_conf>
 		<classe>B</classe>
-		<Auteurs id_auteur="JH"/>
+		<Auteur_production_laas id_auteur="badufour"/>
 	</Article_Conference>
 
 	<Partenaire>
@@ -208,13 +210,13 @@
             <annee_publication>2016</annee_publication>
             <nombre_pages>420</nombre_pages>
             <nom_rapport_recherche>Les bénéfices d'un bon canapé</nom_rapport_recherche>
-			<Auteurs id_auteur="JH"/>
-			<Auteurs id_auteur="DLM"/>
+			<Auteur_production_externe id_auteur="JH"/>
+			<Auteur_production_laas id_auteur="aldlm"/>
         </Rapport_Recherche>
 
         <acronyme_equipe>MCHTS</acronyme_equipe>
         <id_membre>aldlm</id_membre>
-        <nom_partenaire>Drozophou</nom_partenaire>
+        <Partenaire_projet nom="Drozophou"/>
     </Projet_de_Recherche>
 
 	<Projet_de_Recherche>
@@ -229,20 +231,50 @@
 			<annee_publication>2017</annee_publication>
 			<nombre_pages>614</nombre_pages>
 			<nom_rapport_recherche>Desintégration particulaire</nom_rapport_recherche>
-			<Auteurs id_auteur="DLM"/>
+			<Auteur_production_laas id_auteur="badufour"/>
 		</Rapport_Recherche>
 
 		<Rapport_Recherche>
 			<annee_publication>2018</annee_publication>
 			<nombre_pages>124</nombre_pages>
 			<nom_rapport_recherche>Reconstruction par l'absurde</nom_rapport_recherche>
-			<Auteurs id_auteur="JH"/>
-			<Auteurs id_auteur="DLM"/>
+			<Auteur_production_externe id_auteur="AF"/>
+			<Auteur_production_laas id_auteur="badufour"/>
+		</Rapport_Recherche>
+
+		<acronyme_equipe>GTLS</acronyme_equipe>
+		<id_membre>badufour</id_membre>
+		<Partenaire_projet nom="Infino REA"/>
+		<Partenaire_projet nom="ARC Elec"/>
+	</Projet_de_Recherche>
+
+	<Projet_de_Recherche>
+		<titre_projet>Limiter les dégats de chute par implantation génétique d'une queue de chat</titre_projet>
+		<acronyme_projet>QDC</acronyme_projet>
+		<date_debut>21/02/2017</date_debut>
+		<duree>6 ans</duree>
+		<cout>9</cout>
+		<budget>6</budget>
+
+		<Rapport_Recherche>
+			<annee_publication>2017</annee_publication>
+			<nombre_pages>614</nombre_pages>
+			<nom_rapport_recherche>Retomber sur pattes</nom_rapport_recherche>
+			<Auteur_production_externe id_auteur="JH"/>
+			<Auteur_production_laas id_auteur="aldlm"/>
+		</Rapport_Recherche>
+
+		<Rapport_Recherche>
+			<annee_publication>2017</annee_publication>
+			<nombre_pages>124</nombre_pages>
+			<nom_rapport_recherche>Etudes sur l'altitude de chute et les dégats causés chez le chat</nom_rapport_recherche>
+			<Auteur_production_externe id_auteur="JH"/>
+			<Auteur_production_laas id_auteur="aldlm"/>
 		</Rapport_Recherche>
 
 		<acronyme_equipe>MCHTS</acronyme_equipe>
 		<id_membre>aldlm</id_membre>
-		<nom_partenaire>Drozophou</nom_partenaire>
+		<Partenaire_projet nom="Infino REA"/>
 	</Projet_de_Recherche>
 
 	<Theme>
@@ -256,7 +288,7 @@
 		<description>Téléportation</description>
 		<acronyme_theme>TEL</acronyme_theme>
 		<id_membre>adgonzalez</id_membre>
-        <acronyme_projet>RDMUMH</acronyme_projet>
+        <acronyme_projet>PNY</acronyme_projet>
 	</Theme>
 
 	<Theme>
